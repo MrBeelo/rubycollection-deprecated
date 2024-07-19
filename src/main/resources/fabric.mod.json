@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "rubycollection",
+	"version": "${version}",
+	"name": "The Ruby Collection",
+	"description": "A mod adding the Ruby and all of its components.",
+	"authors": [
+		"MrBeelo"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/rubycollection/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mrbeelo.rubycollection.Rubycollection"
+		],
+		"client": [
+			"net.mrbeelo.rubycollection.RubycollectionClient"
+		],
+		"fabric-datagen": [
+			"net.mrbeelo.rubycollection.RubycollectionDataGenerator"
+		]
+	},
+	"mixins": [
+		"rubycollection.mixins.json",
+		{
+			"config": "rubycollection.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
