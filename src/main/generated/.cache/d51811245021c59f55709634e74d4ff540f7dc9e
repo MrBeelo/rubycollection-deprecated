@@ -1,0 +1,7 @@
+// 1.21	2024-07-20T02:23:25.7403721	The Ruby Collection/Model Definitions
+dfa8be28a3695e65092a00efbc200830ca4b62cd assets\rubycollection\blockstates\ruby_block.json
+0b896c1066186544682067b59bc134c53c756798 assets\rubycollection\models\item\ruby_cluster.json
+bd2b72e5b526a5fc1776820fca7fdfc7a330e57d assets\rubycollection\models\item\ruby.json
+af8464f9538baf0c2ace8f38c66dddac6cfcb7c9 assets\rubycollection\models\item\ruby_ingot.json
+b7dbc34641a7e477496e8b7c2bdd281fc54fd5ff assets\rubycollection\models\block\ruby_block.json
+3c4e3adb465c83148203c232a6fac04352cbf514 assets\rubycollection\models\item\ruby_block.json

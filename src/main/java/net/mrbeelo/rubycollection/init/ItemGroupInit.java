@@ -10,7 +10,7 @@ import net.mrbeelo.rubycollection.Rubycollection;
 import java.util.Optional;
 
 public class ItemGroupInit {
-    private static final Text RUBY_TITLE = Text.translatable("itemGroup." + Rubycollection.MOD_ID + ".ruby_group");
+    public static final Text RUBY_TITLE = Text.translatable("itemGroup." + Rubycollection.MOD_ID + ".ruby_group");
     public static final ItemGroup RUBY_GROUP = register("ruby_group", FabricItemGroup.builder()
             .displayName(RUBY_TITLE)
             .icon(ItemInit.RUBY::getDefaultStack)
