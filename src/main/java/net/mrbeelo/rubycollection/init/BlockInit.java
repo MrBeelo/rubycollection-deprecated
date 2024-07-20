@@ -10,7 +10,7 @@ import net.minecraft.registry.Registry;
 import net.mrbeelo.rubycollection.Rubycollection;
 
 public class BlockInit {
-    public static final Block RUBY_BLOCK = register("ruby_block", new Block(AbstractBlock.Settings.copy(Blocks.EMERALD_BLOCK)));
+    public static final Block RUBY_BLOCK = registerWithItem("ruby_block", new Block(AbstractBlock.Settings.copy(Blocks.EMERALD_BLOCK)));
 
 
     public static <T extends Block> T register(String name, T block) {

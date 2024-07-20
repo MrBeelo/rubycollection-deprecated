@@ -12,7 +12,6 @@ public class ItemInit {
     public static final Item RUBY = register("ruby", new Item(new Item.Settings().maxCount(86)));
     public static final Item RUBY_INGOT = register("ruby_ingot", new Item(new Item.Settings()));
     public static final Item RUBY_CLUSTER = register("ruby_cluster", new Item(new Item.Settings()));
-    public static final BlockItem RUBY_BLOCK = register("ruby_block", new BlockItem(BlockInit.RUBY_BLOCK, new Item.Settings()));
 
 
 
