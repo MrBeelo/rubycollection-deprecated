@@ -16,6 +16,8 @@ public class RubycollectionModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(BlockInit.RUBY_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInit.RUBY_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInit.DEEPSLATE_RUBY_ORE);
     }
 
     @Override

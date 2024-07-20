@@ -6,6 +6,7 @@ import net.minecraft.util.Identifier;
 import net.mrbeelo.rubycollection.init.BlockInit;
 import net.mrbeelo.rubycollection.init.ItemGroupInit;
 import net.mrbeelo.rubycollection.init.ItemInit;
+import net.mrbeelo.rubycollection.init.worldgen.BiomeModificationInit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,6 +20,7 @@ public class Rubycollection implements ModInitializer {
 		ItemInit.load();
 		BlockInit.load();
 		ItemGroupInit.load();
+		BiomeModificationInit.load();
 	}
 
 	public static Identifier id(String path) {

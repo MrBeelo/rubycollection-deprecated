@@ -1,5 +1,7 @@
 {
   "values": [
-    "rubycollection:ruby_block"
+    "rubycollection:ruby_block",
+    "rubycollection:ruby_ore",
+    "rubycollection:deepslate_ruby_ore"
   ]
 }

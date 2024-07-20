@@ -34,6 +34,8 @@ public class RubycollectionEnglishLanguageProvider extends FabricLanguageProvide
         translationBuilder.add(ItemInit.RUBY_INGOT, "Ruby Ingot");
         translationBuilder.add(ItemInit.RUBY_CLUSTER, "Ruby Cluster");
         translationBuilder.add(BlockInit.RUBY_BLOCK, "Ruby Block");
+        translationBuilder.add(BlockInit.RUBY_ORE, "Ruby Ore");
+        translationBuilder.add(BlockInit.DEEPSLATE_RUBY_ORE, "Deepslate Ruby Ore");
         addText(translationBuilder, ItemGroupInit.RUBY_TITLE, "The Ruby Collection");
 
     }

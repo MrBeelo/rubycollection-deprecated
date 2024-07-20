@@ -1,2 +1,4 @@
-// 1.21	2024-07-20T16:31:26.9663253	The Ruby Collection/Block Loot Tables
+// 1.21	2024-07-20T20:12:03.235548	The Ruby Collection/Block Loot Tables
+b9316a68485d931ed5c75c2e26837baab20f602d data\rubycollection\loot_table\blocks\ruby_ore.json
 66842064162a7eb64ad98234801372f3548adb7c data\rubycollection\loot_table\blocks\ruby_block.json
+55f1f9a7c7554052989c9d736b24922ef7c9a6f3 data\rubycollection\loot_table\blocks\deepslate_ruby_ore.json

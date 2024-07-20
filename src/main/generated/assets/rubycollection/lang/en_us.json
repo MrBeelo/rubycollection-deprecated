@@ -1,5 +1,7 @@
 {
+  "block.rubycollection.deepslate_ruby_ore": "Deepslate Ruby Ore",
   "block.rubycollection.ruby_block": "Ruby Block",
+  "block.rubycollection.ruby_ore": "Ruby Ore",
   "item.rubycollection.ruby": "Ruby",
   "item.rubycollection.ruby_cluster": "Ruby Cluster",
   "item.rubycollection.ruby_ingot": "Ruby Ingot",

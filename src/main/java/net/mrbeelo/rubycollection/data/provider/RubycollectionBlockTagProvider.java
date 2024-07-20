@@ -16,10 +16,14 @@ public class RubycollectionBlockTagProvider extends FabricTagProvider.BlockTagPr
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(BlockInit.RUBY_BLOCK);
+                .add(BlockInit.RUBY_BLOCK)
+                .add(BlockInit.RUBY_ORE)
+                .add(BlockInit.DEEPSLATE_RUBY_ORE);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(BlockInit.RUBY_BLOCK);
+                .add(BlockInit.RUBY_BLOCK)
+                .add(BlockInit.RUBY_ORE)
+                .add(BlockInit.DEEPSLATE_RUBY_ORE);
 
     }
 }

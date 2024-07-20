@@ -15,6 +15,8 @@ public class RubycollectionBlockLootTableProvider extends FabricBlockLootTablePr
     @Override
     public void generate() {
         addDrop(BlockInit.RUBY_BLOCK);
+        addDrop(BlockInit.RUBY_ORE);
+        addDrop(BlockInit.DEEPSLATE_RUBY_ORE);
 
     }
 }
