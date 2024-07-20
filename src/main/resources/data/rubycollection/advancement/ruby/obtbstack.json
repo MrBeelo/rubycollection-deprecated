@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "rubycollection:ruby_block",
+      "count": 1
+    },
+    "title": "How many more do you need?",
+    "description": "Obtain a full stack of Ruby Blocks",
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "rubycollection:ruby/obtblock",
+  "criteria": {
+    "requirementbstack": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player"
+        },
+        "items": [
+          {
+            "items": "rubycollection:ruby_block",
+            "count": 64
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "requirementbstack"
+    ]
+  ],
+  "rewards": {
+    "experience": 3500
+  }
+}

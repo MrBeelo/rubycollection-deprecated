@@ -25,5 +25,11 @@ public class RubycollectionModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ItemInit.RUBY, Models.GENERATED);
         itemModelGenerator.register(ItemInit.RUBY_INGOT, Models.GENERATED);
         itemModelGenerator.register(ItemInit.RUBY_CLUSTER, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.RUBY_NUGGET, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.RUBY_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.RUBY_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.RUBY_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.RUBY_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.RUBY_HOE, Models.HANDHELD);
     }
 }
