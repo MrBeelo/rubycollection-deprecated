@@ -16,15 +16,15 @@ public enum RubycollectionToolMaterials implements ToolMaterial {
     private final int durability;
     private final float miningSpeedMultiplier, attackDamage;
     private final TagKey<Block> inverseTag;
-    private final int enchantablity;
+    private final int enchantability;
     private final Ingredient repairIngredient;
 
-    RubycollectionToolMaterials(int durability, float miningSpeedMultiplier, float attackDamage, TagKey<Block> inverseTag, int enchantablity, Ingredient repairIngredient) {
+    RubycollectionToolMaterials(int durability, float miningSpeedMultiplier, float attackDamage, TagKey<Block> inverseTag, int enchantability, Ingredient repairIngredient) {
         this.durability = durability;
         this.miningSpeedMultiplier = miningSpeedMultiplier;
         this.attackDamage = attackDamage;
         this.inverseTag = inverseTag;
-        this.enchantablity = enchantablity;
+        this.enchantability = enchantability;
         this.repairIngredient = repairIngredient;
     }
 
@@ -50,7 +50,7 @@ public enum RubycollectionToolMaterials implements ToolMaterial {
 
     @Override
     public int getEnchantability() {
-        return this.enchantablity;
+        return this.enchantability;
     }
 
     @Override

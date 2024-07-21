@@ -12,11 +12,11 @@ public class ItemInit {
     public static final Item RUBY_INGOT = register("ruby_ingot", new Item(new Item.Settings()));
     public static final Item RUBY_CLUSTER = register("ruby_cluster", new Item(new Item.Settings()));
     public static final Item RUBY_SHARD = register("ruby_shard", new Item(new Item.Settings()));
-    public static final SwordItem RUBY_SWORD = register("ruby_sword", new SwordItem(RubycollectionToolMaterials.RUBY, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(RubycollectionToolMaterials.RUBY, 3, -2.4f))));
-    public static final PickaxeItem RUBY_PICKAXE = register("ruby_pickaxe", new PickaxeItem(RubycollectionToolMaterials.RUBY, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(RubycollectionToolMaterials.RUBY, 3, -2.4f))));
-    public static final AxeItem RUBY_AXE = register("ruby_axe", new AxeItem(RubycollectionToolMaterials.RUBY, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(RubycollectionToolMaterials.RUBY, 3, -2.4f))));
-    public static final ShovelItem RUBY_SHOVEL = register("ruby_shovel", new ShovelItem(RubycollectionToolMaterials.RUBY, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(RubycollectionToolMaterials.RUBY, 3, -2.4f))));
-    public static final HoeItem RUBY_HOE = register("ruby_hoe", new HoeItem(RubycollectionToolMaterials.RUBY, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(RubycollectionToolMaterials.RUBY, 3, -2.4f))));
+    public static final SwordItem RUBY_SWORD = register("ruby_sword", new SwordItem(RubycollectionToolMaterials.RUBY, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(RubycollectionToolMaterials.RUBY, 3, -2.4f)))); //2 BONUS DMG INSTEAD OF 1
+    public static final PickaxeItem RUBY_PICKAXE = register("ruby_pickaxe", new PickaxeItem(RubycollectionToolMaterials.RUBY, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(RubycollectionToolMaterials.RUBY, 0, -2.8f))));
+    public static final AxeItem RUBY_AXE = register("ruby_axe", new AxeItem(RubycollectionToolMaterials.RUBY, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(RubycollectionToolMaterials.RUBY, 5, -2.9f)))); //2 BONUS DMG INSTEAD OF 1
+    public static final ShovelItem RUBY_SHOVEL = register("ruby_shovel", new ShovelItem(RubycollectionToolMaterials.RUBY, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(RubycollectionToolMaterials.RUBY, 0.5f, -3f))));
+    public static final HoeItem RUBY_HOE = register("ruby_hoe", new HoeItem(RubycollectionToolMaterials.RUBY, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(RubycollectionToolMaterials.RUBY, -6f, 0f))));
 
 
 

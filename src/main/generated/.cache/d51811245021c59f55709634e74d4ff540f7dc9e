@@ -1,4 +1,4 @@
-// 1.21	2024-07-21T14:59:22.4711178	The Ruby Collection/Model Definitions
+// 1.21	2024-07-21T23:09:12.695577	The Ruby Collection/Model Definitions
 21d3844b847ee24ec2625bcae758757d7aab3917 assets\rubycollection\models\item\ruby_ore.json
 7aff91a7f71654e86f1c23dc84257ec234c04fbb assets\rubycollection\models\block\deepslate_ruby_ore.json
 3894fa43267c2915d422336815cd097be9755c91 assets\rubycollection\models\item\ruby_axe.json
@@ -9,8 +9,8 @@ c315f093eda0fda2996a6c6358f360d22369de06 assets\rubycollection\models\item\ruby_
 1f9f7157ab2197e8af328bf01beba69367addb81 assets\rubycollection\blockstates\deepslate_ruby_ore.json
 af8464f9538baf0c2ace8f38c66dddac6cfcb7c9 assets\rubycollection\models\item\ruby_ingot.json
 54b5410235101566d37198231730cbb95a06e52a assets\rubycollection\blockstates\ruby_ore.json
-6f2f63f8882bdad3ca1e339202d2e4f9c7e52d07 assets\rubycollection\models\block\ruby_ore.json
 482c82d32f23426141c658d987ba6a7778c53cf2 assets\rubycollection\models\item\ruby_shard.json
+6f2f63f8882bdad3ca1e339202d2e4f9c7e52d07 assets\rubycollection\models\block\ruby_ore.json
 dfa8be28a3695e65092a00efbc200830ca4b62cd assets\rubycollection\blockstates\ruby_block.json
 67180d92c2ad6e0ea232e64b95c6d17dc1caa0b8 assets\rubycollection\models\item\deepslate_ruby_ore.json
 30106ec4301b6bcb471488be5991281baad68821 assets\rubycollection\models\item\ruby_pickaxe.json
