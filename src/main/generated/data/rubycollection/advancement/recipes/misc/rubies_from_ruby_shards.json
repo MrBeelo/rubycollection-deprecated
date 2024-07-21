@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ruby": {
+    "has_ruby_shard": {
       "conditions": {
         "items": [
           {
-            "items": "rubycollection:ruby"
+            "items": "rubycollection:ruby_shard"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "rubycollection:ruby_nuggets_from_rubies"
+        "recipe": "rubycollection:rubies_from_ruby_shards"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_ruby"
+      "has_ruby_shard"
     ]
   ],
   "rewards": {
     "recipes": [
-      "rubycollection:ruby_nuggets_from_rubies"
+      "rubycollection:rubies_from_ruby_shards"
     ]
   }
 }

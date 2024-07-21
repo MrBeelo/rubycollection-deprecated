@@ -33,7 +33,7 @@ public class RubycollectionEnglishLanguageProvider extends FabricLanguageProvide
         translationBuilder.add(ItemInit.RUBY, "Ruby");
         translationBuilder.add(ItemInit.RUBY_INGOT, "Ruby Ingot");
         translationBuilder.add(ItemInit.RUBY_CLUSTER, "Ruby Cluster");
-        translationBuilder.add(ItemInit.RUBY_NUGGET, "Ruby Nugget");
+        translationBuilder.add(ItemInit.RUBY_SHARD, "Ruby Shard");
         translationBuilder.add(ItemInit.RUBY_SWORD, "Ruby Sword");
         translationBuilder.add(ItemInit.RUBY_PICKAXE, "Ruby Pickaxe");
         translationBuilder.add(ItemInit.RUBY_AXE, "Ruby Axe");

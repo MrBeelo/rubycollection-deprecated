@@ -8,7 +8,6 @@ import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.util.Identifier;
 import net.mrbeelo.rubycollection.Rubycollection;
 import net.mrbeelo.rubycollection.init.BlockInit;
 import net.mrbeelo.rubycollection.init.ItemInit;
@@ -62,17 +61,17 @@ public class RubycollectionRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, Rubycollection.id("ruby_ingots_from_ruby_cluster"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ItemInit.RUBY, 1)
-                .input('E', ItemInit.RUBY_NUGGET)
+                .input('E', ItemInit.RUBY_SHARD)
                 .pattern(" E ")
                 .pattern("EEE")
                 .pattern(" E ")
-                .criterion(hasItem(ItemInit.RUBY_NUGGET), conditionsFromItem(ItemInit.RUBY_NUGGET))
-                .offerTo(exporter, Rubycollection.id("rubies_from_ruby_nuggets"));
+                .criterion(hasItem(ItemInit.RUBY_SHARD), conditionsFromItem(ItemInit.RUBY_SHARD))
+                .offerTo(exporter, Rubycollection.id("rubies_from_ruby_shards"));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ItemInit.RUBY_NUGGET, 5)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ItemInit.RUBY_SHARD, 5)
                 .input(ItemInit.RUBY)
                 .criterion(hasItem(ItemInit.RUBY), conditionsFromItem(ItemInit.RUBY))
-                .offerTo(exporter, Rubycollection.id("ruby_nuggets_from_rubies"));
+                .offerTo(exporter, Rubycollection.id("ruby_shards_from_rubies"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ItemInit.RUBY_SWORD, 1)
                 .input('E', ItemInit.RUBY_INGOT)

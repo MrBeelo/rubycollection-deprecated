@@ -11,7 +11,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "rubycollection:ruby_nugget",
+          "name": "rubycollection:ruby_shard",
           "weight": 1,
           "functions": [
             {

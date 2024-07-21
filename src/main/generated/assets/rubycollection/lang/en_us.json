@@ -7,8 +7,8 @@
   "item.rubycollection.ruby_cluster": "Ruby Cluster",
   "item.rubycollection.ruby_hoe": "Ruby Hoe",
   "item.rubycollection.ruby_ingot": "Ruby Ingot",
-  "item.rubycollection.ruby_nugget": "Ruby Nugget",
   "item.rubycollection.ruby_pickaxe": "Ruby Pickaxe",
+  "item.rubycollection.ruby_shard": "Ruby Shard",
   "item.rubycollection.ruby_shovel": "Ruby Shovel",
   "item.rubycollection.ruby_sword": "Ruby Sword",
   "itemGroup.rubycollection.ruby_group": "The Ruby Collection"
