@@ -1,4 +1,4 @@
-package net.mrbeelo.rubycollection.init;
+package net.mrbeelo.rubycollection.addons.modaddons;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
@@ -9,11 +9,11 @@ import net.mrbeelo.rubycollection.Rubycollection;
 
 import java.util.Optional;
 
-public class ItemGroupInit {
+public class ModItemGroups {
     public static final Text RUBY_TITLE = Text.translatable("itemGroup." + Rubycollection.MOD_ID + ".ruby_group");
     public static final ItemGroup RUBY_GROUP = register("ruby_group", FabricItemGroup.builder()
             .displayName(RUBY_TITLE)
-            .icon(ItemInit.RUBY::getDefaultStack)
+            .icon(ModItems.RUBY::getDefaultStack)
             .entries((displayContext, entries) -> Registries.ITEM.getIds()
                     .stream()
                     .filter(key -> key.getNamespace().equals(Rubycollection.MOD_ID))

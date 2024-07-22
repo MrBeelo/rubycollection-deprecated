@@ -1,4 +1,4 @@
-package net.mrbeelo.rubycollection.data.generator;
+package net.mrbeelo.rubycollection.addons.worldgen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricDynamicRegistryProvider;
@@ -7,8 +7,8 @@ import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
 
-public class RubycollectionWorldGenerator extends FabricDynamicRegistryProvider {
-    public RubycollectionWorldGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+public class WorldGenerator extends FabricDynamicRegistryProvider {
+    public WorldGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
     }
 

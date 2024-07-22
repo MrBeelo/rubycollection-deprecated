@@ -1,16 +1,12 @@
-package net.mrbeelo.rubycollection.data.list.enums;
+package net.mrbeelo.rubycollection.addons.modaddons;
 
 import net.minecraft.block.Block;
-import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
-import net.mrbeelo.rubycollection.data.list.TagList;
-import net.mrbeelo.rubycollection.init.ItemInit;
 
-public enum RubycollectionToolMaterials implements ToolMaterial {
-    RUBY(3100, 14.0F, 6.0F, TagList.Blocks.INCORRECT_FOR_RUBY_TOOL, 15, Ingredient.ofItems(ItemInit.RUBY));
+public enum ModToolMaterials implements ToolMaterial {
+    RUBY(3100, 14.0F, 6.0F, ModTags.Blocks.INCORRECT_FOR_RUBY_TOOL, 15, Ingredient.ofItems(ModItems.RUBY));
 
 
     private final int durability;
@@ -19,7 +15,7 @@ public enum RubycollectionToolMaterials implements ToolMaterial {
     private final int enchantability;
     private final Ingredient repairIngredient;
 
-    RubycollectionToolMaterials(int durability, float miningSpeedMultiplier, float attackDamage, TagKey<Block> inverseTag, int enchantability, Ingredient repairIngredient) {
+    ModToolMaterials(int durability, float miningSpeedMultiplier, float attackDamage, TagKey<Block> inverseTag, int enchantability, Ingredient repairIngredient) {
         this.durability = durability;
         this.miningSpeedMultiplier = miningSpeedMultiplier;
         this.attackDamage = attackDamage;

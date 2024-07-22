@@ -1,4 +1,4 @@
-package net.mrbeelo.rubycollection.init;
+package net.mrbeelo.rubycollection.addons.modaddons;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -9,7 +9,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.mrbeelo.rubycollection.Rubycollection;
 
-public class BlockInit {
+public class ModBlocks {
     public static final Block RUBY_BLOCK = registerWithItem("ruby_block", new Block(AbstractBlock.Settings.copy(Blocks.EMERALD_BLOCK)));
     public static final Block RUBY_ORE = registerWithItem("ruby_ore", new Block(AbstractBlock.Settings.copy(Blocks.EMERALD_ORE)));
     public static final Block DEEPSLATE_RUBY_ORE = registerWithItem("deepslate_ruby_ore", new Block(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_EMERALD_ORE)));
@@ -21,7 +21,7 @@ public class BlockInit {
 
     public static <T extends Block> T registerWithItem(String name, T block, Item.Settings settings) {
         T registered = register(name, block);
-        ItemInit.register(name, new BlockItem(registered, settings));
+        ModItems.register(name, new BlockItem(registered, settings));
         return registered;
     }
 

@@ -1,4 +1,4 @@
-package net.mrbeelo.rubycollection.data.provider;
+package net.mrbeelo.rubycollection.addons.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
@@ -10,21 +10,21 @@ import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.function.ExplosionDecayLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.registry.RegistryWrapper;
-import net.mrbeelo.rubycollection.init.BlockInit;
-import net.mrbeelo.rubycollection.init.ItemInit;
+import net.mrbeelo.rubycollection.addons.modaddons.ModBlocks;
+import net.mrbeelo.rubycollection.addons.modaddons.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 
-public class RubycollectionBlockLootTableProvider extends FabricBlockLootTableProvider {
-    public RubycollectionBlockLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+public class RubycollectionBlockLootTableDatagen extends FabricBlockLootTableProvider {
+    public RubycollectionBlockLootTableDatagen(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
         super(dataOutput, registryLookup);
     }
 
     @Override
     public void generate() {
-        addDrop(BlockInit.RUBY_BLOCK);
-        addDrop(BlockInit.RUBY_ORE, (block) -> createSimpleDrop(block, ItemInit.RUBY));
-        addDrop(BlockInit.DEEPSLATE_RUBY_ORE, (block) -> createSimpleDrop(block, ItemInit.RUBY));
+        addDrop(ModBlocks.RUBY_BLOCK);
+        addDrop(ModBlocks.RUBY_ORE, (block) -> createSimpleDrop(block, ModItems.RUBY));
+        addDrop(ModBlocks.DEEPSLATE_RUBY_ORE, (block) -> createSimpleDrop(block, ModItems.RUBY));
     }
 
     protected LootTable.Builder createSimpleDrop(Block block, Item item) {

@@ -3,10 +3,10 @@ package net.mrbeelo.rubycollection;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
-import net.mrbeelo.rubycollection.init.BlockInit;
-import net.mrbeelo.rubycollection.init.ItemGroupInit;
-import net.mrbeelo.rubycollection.init.ItemInit;
-import net.mrbeelo.rubycollection.init.worldgen.BiomeModificationInit;
+import net.mrbeelo.rubycollection.addons.modaddons.ModBlocks;
+import net.mrbeelo.rubycollection.addons.modaddons.ModItemGroups;
+import net.mrbeelo.rubycollection.addons.modaddons.ModItems;
+import net.mrbeelo.rubycollection.addons.worldgen.BiomeModification;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,11 +16,11 @@ public class Rubycollection implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("ok me loading");
-		ItemInit.load();
-		BlockInit.load();
-		ItemGroupInit.load();
-		BiomeModificationInit.load();
+		LOGGER.info("Loading...");
+		ModItems.load();
+		ModBlocks.load();
+		ModItemGroups.load();
+		BiomeModification.load();
 	}
 
 	public static Identifier id(String path) {
