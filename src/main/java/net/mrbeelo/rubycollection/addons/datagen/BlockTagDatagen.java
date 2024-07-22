@@ -8,8 +8,8 @@ import net.mrbeelo.rubycollection.addons.modaddons.ModBlocks;
 
 import java.util.concurrent.CompletableFuture;
 
-public class RubycollectionBlockTagDatagen extends FabricTagProvider.BlockTagProvider {
-    public RubycollectionBlockTagDatagen(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+public class BlockTagDatagen extends FabricTagProvider.BlockTagProvider {
+    public BlockTagDatagen(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
     }
 

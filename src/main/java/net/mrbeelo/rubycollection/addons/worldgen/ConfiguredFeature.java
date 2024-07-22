@@ -15,6 +15,9 @@ import net.mrbeelo.rubycollection.addons.modaddons.ModBlocks;
 import java.util.List;
 
 public class ConfiguredFeature {
+
+    //REGISTERING
+
     public static final RegistryKey<net.minecraft.world.gen.feature.ConfiguredFeature<?, ?>> OVERWORLD_RUBY_ORE_KEY = registerKey("overworld_ruby_ore");
 
     public static void bootstrap(Registerable<net.minecraft.world.gen.feature.ConfiguredFeature<?, ?>> context) {
@@ -29,6 +32,8 @@ public class ConfiguredFeature {
 
 
     }
+
+    //METHODS
 
     private static RegistryKey<net.minecraft.world.gen.feature.ConfiguredFeature<?, ?>> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, Rubycollection.id(name));

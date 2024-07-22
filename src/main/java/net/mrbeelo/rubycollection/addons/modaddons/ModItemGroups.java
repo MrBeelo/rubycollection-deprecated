@@ -9,7 +9,13 @@ import net.mrbeelo.rubycollection.Rubycollection;
 
 import java.util.Optional;
 
+
+
+
 public class ModItemGroups {
+
+    //REGISTERING
+
     public static final Text RUBY_TITLE = Text.translatable("itemGroup." + Rubycollection.MOD_ID + ".ruby_group");
     public static final ItemGroup RUBY_GROUP = register("ruby_group", FabricItemGroup.builder()
             .displayName(RUBY_TITLE)
@@ -21,6 +27,8 @@ public class ModItemGroups {
                     .map(Optional::orElseThrow)
                     .forEach(entries::add))
             .build());
+
+    //METHODS
 
     public static <T extends ItemGroup> T register(String name, T itemGroup) {
         return Registry.register(Registries.ITEM_GROUP, Rubycollection.id(name), itemGroup);

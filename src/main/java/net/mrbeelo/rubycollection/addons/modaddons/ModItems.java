@@ -7,6 +7,8 @@ import net.mrbeelo.rubycollection.Rubycollection;
 
 public class ModItems {
 
+    //REGISTERING
+
     public static final Item RUBY = register("ruby", new Item(new Item.Settings().maxCount(86)));
     public static final Item RUBY_INGOT = register("ruby_ingot", new Item(new Item.Settings()));
     public static final Item RUBY_CLUSTER = register("ruby_cluster", new Item(new Item.Settings()));
@@ -17,9 +19,7 @@ public class ModItems {
     public static final ShovelItem RUBY_SHOVEL = register("ruby_shovel", new ShovelItem(ModToolMaterials.RUBY, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.RUBY, 0.5f, -3f))));
     public static final HoeItem RUBY_HOE = register("ruby_hoe", new HoeItem(ModToolMaterials.RUBY, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.RUBY, -6f, 0f))));
 
-
-
-
+    //METHODS
 
     public static <T extends Item> T register(String name, T item) {
         return Registry.register(Registries.ITEM, Rubycollection.id(name), item);

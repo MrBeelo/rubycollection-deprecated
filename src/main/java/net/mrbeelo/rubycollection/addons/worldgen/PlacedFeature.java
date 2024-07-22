@@ -12,6 +12,9 @@ import net.mrbeelo.rubycollection.Rubycollection;
 import java.util.List;
 
 public class PlacedFeature {
+
+    //REGISTERING
+
     public static final RegistryKey<net.minecraft.world.gen.feature.PlacedFeature> OVERWORLD_RUBY_ORE_KEY = registerKey("overworld_ruby_ore");
 
     public static void bootstrap(Registerable<net.minecraft.world.gen.feature.PlacedFeature> context) {
@@ -20,6 +23,8 @@ public class PlacedFeature {
         register(context, OVERWORLD_RUBY_ORE_KEY, registryLookup.getOrThrow(ConfiguredFeature.OVERWORLD_RUBY_ORE_KEY),
                 Modifiers.modifiersWithCount(5, HeightRangePlacementModifier.uniform(YOffset.fixed(-25), YOffset.fixed(64))));
     }
+
+    //METHODS
 
     private static RegistryKey<net.minecraft.world.gen.feature.PlacedFeature> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.PLACED_FEATURE, Rubycollection.id(name));

@@ -15,8 +15,8 @@ import net.mrbeelo.rubycollection.addons.modaddons.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 
-public class RubycollectionBlockLootTableDatagen extends FabricBlockLootTableProvider {
-    public RubycollectionBlockLootTableDatagen(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+public class BlockLootTableDatagen extends FabricBlockLootTableProvider {
+    public BlockLootTableDatagen(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
         super(dataOutput, registryLookup);
     }
 

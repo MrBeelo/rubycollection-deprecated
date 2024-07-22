@@ -13,8 +13,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
-public class RubycollectionEnglishLanguageDatagen extends FabricLanguageProvider {
-    public RubycollectionEnglishLanguageDatagen(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+public class EnglishTranslationDatagen extends FabricLanguageProvider {
+    public EnglishTranslationDatagen(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
         super(dataOutput, "en_us", registryLookup);
     }
 

@@ -6,7 +6,7 @@ import net.minecraft.util.Identifier;
 import net.mrbeelo.rubycollection.addons.modaddons.ModBlocks;
 import net.mrbeelo.rubycollection.addons.modaddons.ModItemGroups;
 import net.mrbeelo.rubycollection.addons.modaddons.ModItems;
-import net.mrbeelo.rubycollection.addons.worldgen.BiomeModification;
+import net.mrbeelo.rubycollection.addons.modaddons.ModBiomeModification;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,10 +17,12 @@ public class Rubycollection implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Loading...");
+
+		//LOAD ALL MODADDONS CLASSES (INITS)
 		ModItems.load();
 		ModBlocks.load();
 		ModItemGroups.load();
-		BiomeModification.load();
+		ModBiomeModification.load();
 	}
 
 	public static Identifier id(String path) {

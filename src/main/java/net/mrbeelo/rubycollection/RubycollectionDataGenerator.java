@@ -5,7 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 import net.mrbeelo.rubycollection.addons.datagen.*;
-import net.mrbeelo.rubycollection.addons.worldgen.WorldGenerator;
+import net.mrbeelo.rubycollection.addons.datagen.WorldGeneratorDatagen;
 import net.mrbeelo.rubycollection.addons.worldgen.ConfiguredFeature;
 import net.mrbeelo.rubycollection.addons.worldgen.PlacedFeature;
 
@@ -14,12 +14,12 @@ public class RubycollectionDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
-		pack.addProvider(RubycollectionModelDatagen::new);
-		pack.addProvider(RubycollectionEnglishLanguageDatagen::new);
-		pack.addProvider(RubycollectionBlockLootTableDatagen::new);
-		pack.addProvider(RubycollectionBlockTagDatagen::new);
-		pack.addProvider(RubycollectionRecipeDatagen::new);
-		pack.addProvider(WorldGenerator::new);
+		pack.addProvider(ModelDatagen::new);
+		pack.addProvider(EnglishTranslationDatagen::new);
+		pack.addProvider(BlockLootTableDatagen::new);
+		pack.addProvider(BlockTagDatagen::new);
+		pack.addProvider(RecipeDatagen::new);
+		pack.addProvider(WorldGeneratorDatagen::new);
 	}
 
 	@Override

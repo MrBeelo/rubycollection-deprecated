@@ -8,8 +8,8 @@ import net.minecraft.data.client.Models;
 import net.mrbeelo.rubycollection.addons.modaddons.ModBlocks;
 import net.mrbeelo.rubycollection.addons.modaddons.ModItems;
 
-public class RubycollectionModelDatagen extends FabricModelProvider {
-    public RubycollectionModelDatagen(FabricDataOutput output) {
+public class ModelDatagen extends FabricModelProvider {
+    public ModelDatagen(FabricDataOutput output) {
         super(output);
     }
 

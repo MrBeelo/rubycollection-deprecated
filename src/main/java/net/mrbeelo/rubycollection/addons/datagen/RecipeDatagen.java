@@ -14,8 +14,8 @@ import net.mrbeelo.rubycollection.addons.modaddons.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 
-public class RubycollectionRecipeDatagen extends FabricRecipeProvider {
-    public RubycollectionRecipeDatagen(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+public class RecipeDatagen extends FabricRecipeProvider {
+    public RecipeDatagen(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
     }
 
