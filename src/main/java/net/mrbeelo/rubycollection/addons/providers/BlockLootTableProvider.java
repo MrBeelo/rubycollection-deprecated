@@ -1,4 +1,4 @@
-package net.mrbeelo.rubycollection.addons.datagen;
+package net.mrbeelo.rubycollection.addons.providers;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
@@ -15,8 +15,8 @@ import net.mrbeelo.rubycollection.addons.modaddons.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 
-public class BlockLootTableDatagen extends FabricBlockLootTableProvider {
-    public BlockLootTableDatagen(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+public class BlockLootTableProvider extends FabricBlockLootTableProvider {
+    public BlockLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
         super(dataOutput, registryLookup);
     }
 

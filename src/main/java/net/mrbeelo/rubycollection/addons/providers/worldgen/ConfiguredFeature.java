@@ -1,4 +1,4 @@
-package net.mrbeelo.rubycollection.addons.worldgen;
+package net.mrbeelo.rubycollection.addons.providers.worldgen;
 
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;

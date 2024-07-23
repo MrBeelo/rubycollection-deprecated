@@ -1,4 +1,4 @@
-package net.mrbeelo.rubycollection.addons.datagen;
+package net.mrbeelo.rubycollection.addons.providers;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
@@ -13,8 +13,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
-public class EnglishTranslationDatagen extends FabricLanguageProvider {
-    public EnglishTranslationDatagen(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+public class EnglishTranslationProvider extends FabricLanguageProvider {
+    public EnglishTranslationProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
         super(dataOutput, "en_us", registryLookup);
     }
 
@@ -39,6 +39,10 @@ public class EnglishTranslationDatagen extends FabricLanguageProvider {
         translationBuilder.add(ModItems.RUBY_AXE, "Ruby Axe");
         translationBuilder.add(ModItems.RUBY_SHOVEL, "Ruby Shovel");
         translationBuilder.add(ModItems.RUBY_HOE, "Ruby Hoe");
+        translationBuilder.add(ModItems.RUBY_HELMET, "Ruby Helmet");
+        translationBuilder.add(ModItems.RUBY_CHESTPLATE, "Ruby Chestplate");
+        translationBuilder.add(ModItems.RUBY_LEGGINGS, "Ruby Leggings");
+        translationBuilder.add(ModItems.RUBY_BOOTS, "Ruby Boots");
         translationBuilder.add(ModBlocks.RUBY_BLOCK, "Ruby Block");
         translationBuilder.add(ModBlocks.RUBY_ORE, "Ruby Ore");
         translationBuilder.add(ModBlocks.DEEPSLATE_RUBY_ORE, "Deepslate Ruby Ore");

@@ -4,22 +4,22 @@ import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
-import net.mrbeelo.rubycollection.addons.datagen.*;
-import net.mrbeelo.rubycollection.addons.datagen.WorldGeneratorDatagen;
-import net.mrbeelo.rubycollection.addons.worldgen.ConfiguredFeature;
-import net.mrbeelo.rubycollection.addons.worldgen.PlacedFeature;
+import net.mrbeelo.rubycollection.addons.providers.*;
+import net.mrbeelo.rubycollection.addons.providers.WorldGeneratorProvider;
+import net.mrbeelo.rubycollection.addons.providers.worldgen.ConfiguredFeature;
+import net.mrbeelo.rubycollection.addons.providers.worldgen.PlacedFeature;
 
 
 public class RubycollectionDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
-		pack.addProvider(ModelDatagen::new);
-		pack.addProvider(EnglishTranslationDatagen::new);
-		pack.addProvider(BlockLootTableDatagen::new);
-		pack.addProvider(BlockTagDatagen::new);
-		pack.addProvider(RecipeDatagen::new);
-		pack.addProvider(WorldGeneratorDatagen::new);
+		pack.addProvider(ModelProvider::new);
+		pack.addProvider(EnglishTranslationProvider::new);
+		pack.addProvider(BlockLootTableProvider::new);
+		pack.addProvider(BlockTagProvider::new);
+		pack.addProvider(RecipeProvider::new);
+		pack.addProvider(WorldGeneratorProvider::new);
 	}
 
 	@Override

@@ -1,4 +1,4 @@
-package net.mrbeelo.rubycollection.addons.datagen;
+package net.mrbeelo.rubycollection.addons.providers;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -8,8 +8,8 @@ import net.minecraft.data.client.Models;
 import net.mrbeelo.rubycollection.addons.modaddons.ModBlocks;
 import net.mrbeelo.rubycollection.addons.modaddons.ModItems;
 
-public class ModelDatagen extends FabricModelProvider {
-    public ModelDatagen(FabricDataOutput output) {
+public class ModelProvider extends FabricModelProvider {
+    public ModelProvider(FabricDataOutput output) {
         super(output);
     }
 
@@ -31,5 +31,9 @@ public class ModelDatagen extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RUBY_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RUBY_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RUBY_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.RUBY_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RUBY_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RUBY_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RUBY_BOOTS, Models.GENERATED);
     }
 }

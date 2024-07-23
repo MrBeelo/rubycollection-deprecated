@@ -1,4 +1,4 @@
-package net.mrbeelo.rubycollection.addons.datagen;
+package net.mrbeelo.rubycollection.addons.providers;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
@@ -8,8 +8,8 @@ import net.mrbeelo.rubycollection.addons.modaddons.ModBlocks;
 
 import java.util.concurrent.CompletableFuture;
 
-public class BlockTagDatagen extends FabricTagProvider.BlockTagProvider {
-    public BlockTagDatagen(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
+    public BlockTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
     }
 

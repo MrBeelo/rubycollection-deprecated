@@ -1,4 +1,4 @@
-package net.mrbeelo.rubycollection.addons.datagen;
+package net.mrbeelo.rubycollection.addons.providers;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -14,8 +14,8 @@ import net.mrbeelo.rubycollection.addons.modaddons.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 
-public class RecipeDatagen extends FabricRecipeProvider {
-    public RecipeDatagen(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+public class RecipeProvider extends FabricRecipeProvider {
+    public RecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
     }
 
@@ -117,6 +117,36 @@ public class RecipeDatagen extends FabricRecipeProvider {
                 .pattern("F ")
                 .criterion(hasItem(ModItems.RUBY_INGOT), conditionsFromItem(ModItems.RUBY_INGOT))
                 .offerTo(exporter, Rubycollection.id("ruby_hoe"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RUBY_HELMET, 1)
+                .input('E', ModItems.RUBY_INGOT)
+                .pattern("EEE")
+                .pattern("E E")
+                .criterion(hasItem(ModItems.RUBY_INGOT), conditionsFromItem(ModItems.RUBY_INGOT))
+                .offerTo(exporter, Rubycollection.id("ruby_helmet"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RUBY_CHESTPLATE, 1)
+                .input('E', ModItems.RUBY_INGOT)
+                .pattern("E E")
+                .pattern("EEE")
+                .pattern("EEE")
+                .criterion(hasItem(ModItems.RUBY_INGOT), conditionsFromItem(ModItems.RUBY_INGOT))
+                .offerTo(exporter, Rubycollection.id("ruby_chestplate"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RUBY_LEGGINGS, 1)
+                .input('E', ModItems.RUBY_INGOT)
+                .pattern("EEE")
+                .pattern("E E")
+                .pattern("E E")
+                .criterion(hasItem(ModItems.RUBY_INGOT), conditionsFromItem(ModItems.RUBY_INGOT))
+                .offerTo(exporter, Rubycollection.id("ruby_leggings"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RUBY_BOOTS, 1)
+                .input('E', ModItems.RUBY_INGOT)
+                .pattern("E E")
+                .pattern("E E")
+                .criterion(hasItem(ModItems.RUBY_INGOT), conditionsFromItem(ModItems.RUBY_INGOT))
+                .offerTo(exporter, Rubycollection.id("ruby_boots"));
     }
 
 
