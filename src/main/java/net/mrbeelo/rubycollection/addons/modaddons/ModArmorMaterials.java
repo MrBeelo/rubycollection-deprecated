@@ -19,12 +19,12 @@ import java.util.function.Supplier;
 
 public class ModArmorMaterials {
     public static final RegistryEntry<ArmorMaterial> RUBY = register("ruby", Util.make(new EnumMap<ArmorItem.Type, Integer>(ArmorItem.Type.class), map -> {
-        map.put(ArmorItem.Type.BOOTS, 3);
-        map.put(ArmorItem.Type.LEGGINGS, 6);
-        map.put(ArmorItem.Type.CHESTPLATE, 7);
-        map.put(ArmorItem.Type.HELMET, 3);
+        map.put(ArmorItem.Type.BOOTS, 4);
+        map.put(ArmorItem.Type.LEGGINGS, 7);
+        map.put(ArmorItem.Type.CHESTPLATE, 9);
+        map.put(ArmorItem.Type.HELMET, 5);
         map.put(ArmorItem.Type.BODY, 6);
-    }), 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.ofItems(ModItems.RUBY));
+    }), 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 5.0F, 2.0F, () -> Ingredient.ofItems(ModItems.RUBY));
 
     private static RegistryEntry<ArmorMaterial> register(
             String id,
