@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.function.Supplier;
 
 public class ModArmorMaterials {
-    public static final RegistryEntry<ArmorMaterial> RUBY = register("ruby", Util.make(new EnumMap(ArmorItem.Type.class), map -> {
+    public static final RegistryEntry<ArmorMaterial> RUBY = register("ruby", Util.make(new EnumMap<ArmorItem.Type, Integer>(ArmorItem.Type.class), map -> {
         map.put(ArmorItem.Type.BOOTS, 3);
         map.put(ArmorItem.Type.LEGGINGS, 6);
         map.put(ArmorItem.Type.CHESTPLATE, 7);
@@ -49,10 +49,10 @@ public class ModArmorMaterials {
             Supplier<Ingredient> repairIngredient,
             List<ArmorMaterial.Layer> layers
     ) {
-        EnumMap<ArmorItem.Type, Integer> enumMap = new EnumMap(ArmorItem.Type.class);
+        EnumMap<ArmorItem.Type, Integer> enumMap = new EnumMap<>(ArmorItem.Type.class);
 
         for (ArmorItem.Type type : ArmorItem.Type.values()) {
-            enumMap.put(type, (Integer)defense.get(type));
+            enumMap.put(type, defense.get(type));
         }
 
         return Registry.registerReference(
@@ -62,4 +62,3 @@ public class ModArmorMaterials {
         );
     }
 }
-
