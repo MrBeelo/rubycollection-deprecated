@@ -8,7 +8,11 @@ import net.minecraft.registry.tag.TagKey;
 //REGISTERING
 
 public enum ModToolMaterials implements ToolMaterial {
+
+    //REGISTERING
     RUBY(3100, 14.0F, 6.0F, ModTags.Blocks.INCORRECT_FOR_RUBY_TOOL, 15, Ingredient.ofItems(ModItems.RUBY));
+
+    //METHODS
 
 
     private final int durability;

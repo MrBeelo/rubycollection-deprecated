@@ -3,10 +3,7 @@ package net.mrbeelo.rubycollection;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
-import net.mrbeelo.rubycollection.addons.modaddons.ModBlocks;
-import net.mrbeelo.rubycollection.addons.modaddons.ModItemGroups;
-import net.mrbeelo.rubycollection.addons.modaddons.ModItems;
-import net.mrbeelo.rubycollection.addons.modaddons.ModBiomeModification;
+import net.mrbeelo.rubycollection.addons.modaddons.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,6 +20,7 @@ public class Rubycollection implements ModInitializer {
 		ModBlocks.load();
 		ModItemGroups.load();
 		ModBiomeModification.load();
+		ModArmorMaterials.load();
 	}
 
 	public static Identifier id(String path) {
