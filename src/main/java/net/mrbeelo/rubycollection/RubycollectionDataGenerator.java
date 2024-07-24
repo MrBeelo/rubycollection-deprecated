@@ -18,6 +18,7 @@ public class RubycollectionDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(EnglishTranslationProvider::new);
 		pack.addProvider(BlockLootTableProvider::new);
 		pack.addProvider(BlockTagProvider::new);
+		pack.addProvider(ItemTagProvider::new);
 		pack.addProvider(RecipeProvider::new);
 		pack.addProvider(WorldGeneratorProvider::new);
 	}

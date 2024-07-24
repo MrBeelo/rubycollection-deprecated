@@ -22,6 +22,7 @@ public class Rubycollection implements ModInitializer {
 		ModBiomeModification.load();
 		ModArmorMaterials.load();
 		ModSounds.load();
+
 	}
 
 	public static Identifier id(String path) {

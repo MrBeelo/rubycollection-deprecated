@@ -5,6 +5,8 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.AnimalArmorItem;
+import net.minecraft.item.ArmorItem;
 import net.mrbeelo.rubycollection.addons.modaddons.ModBlocks;
 import net.mrbeelo.rubycollection.addons.modaddons.ModItems;
 
@@ -31,9 +33,9 @@ public class ModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RUBY_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RUBY_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RUBY_HOE, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.RUBY_HELMET, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RUBY_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RUBY_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RUBY_BOOTS, Models.GENERATED);
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.RUBY_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.RUBY_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.RUBY_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.RUBY_BOOTS));
     }
 }
