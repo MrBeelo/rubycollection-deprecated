@@ -1,0 +1,8 @@
+{
+  "ruby_block_break": {"subtitle": "sounds.rubycollection.ruby_block_break", "sounds": ["rubycollection:ruby_block_break"]},
+  "ruby_block_fall": {"subtitle": "sounds.rubycollection.ruby_block_fall", "sounds": ["rubycollection:ruby_block_fall"]},
+  "ruby_block_hit": {"subtitle": "sounds.rubycollection.ruby_block_hit", "sounds": ["rubycollection:ruby_block_hit"]},
+  "ruby_block_place": {"subtitle": "sounds.rubycollection.ruby_block_place", "sounds": ["rubycollection:ruby_block_place"]},
+  "ruby_block_step": {"subtitle": "sounds.rubycollection.ruby_block_step", "sounds": ["rubycollection:ruby_block_step"]},
+  "gnome": {"category": "master", "sounds": ["rubycollection:custom/gnome"]}
+}

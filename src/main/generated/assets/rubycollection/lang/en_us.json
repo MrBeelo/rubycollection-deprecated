@@ -15,5 +15,10 @@
   "item.rubycollection.ruby_shard": "Ruby Shard",
   "item.rubycollection.ruby_shovel": "Ruby Shovel",
   "item.rubycollection.ruby_sword": "Ruby Sword",
-  "itemGroup.rubycollection.ruby_group": "The Ruby Collection"
+  "itemGroup.rubycollection.ruby_group": "The Ruby Collection",
+  "sound.rubycollection.ruby_block_break": "Ruby Block Broken",
+  "sound.rubycollection.ruby_block_fall": "Ruby Block Fallen",
+  "sound.rubycollection.ruby_block_hit": "Ruby Block Hit",
+  "sound.rubycollection.ruby_block_place": "Ruby Block Placed",
+  "sound.rubycollection.ruby_block_step": "Ruby Block Stepped On"
 }
