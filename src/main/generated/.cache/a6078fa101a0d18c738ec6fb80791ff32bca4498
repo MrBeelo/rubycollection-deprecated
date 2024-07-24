@@ -1,4 +1,4 @@
-// 1.21	2024-07-24T16:06:43.5574582	The Ruby Collection/Recipes
+// 1.21	2024-07-24T17:33:25.6322687	The Ruby Collection/Recipes
 418ff3cafd8f97743a08877d0a465f5e74b382f3 data\rubycollection\advancement\recipes\misc\ruby_leggings.json
 4817e971e62e60e33569d3e86ba1f1e2d4d2a706 data\rubycollection\recipe\ruby_block_from_rubies.json
 a244690d1aa9a4ccd2af0a8347714218e4237fe0 data\rubycollection\advancement\recipes\misc\ruby_ingot_from_rubies.json
@@ -11,9 +11,9 @@ ea8c8e22c488da27d4771faeeb055cc9fc2ec62a data\rubycollection\advancement\recipes
 58c0a638ffc295f336acffb33ca97ac2404489d2 data\rubycollection\advancement\recipes\misc\ruby_cluster_from_ruby_ingots.json
 bca525c31a1ddaae894ef53c0a2e77e0ef82d2ed data\rubycollection\advancement\recipes\misc\ruby_boots.json
 1602cda30cb3d744b1aaca7574a76b854bdc4192 data\rubycollection\recipe\rubies_from_ruby_block.json
-a0ed479a838d33017513473cfc9f1d341c57c152 data\rubycollection\recipe\ruby_axe.json
-5bf64e760ec9d2910591bd657263744ce0c82aef data\rubycollection\recipe\ruby_ingots_from_ruby_cluster.json
 7e5bfc9f59f44b498113e3c05007d47dddc64a0c data\rubycollection\advancement\recipes\misc\ruby_block_from_rubies.json
+5bf64e760ec9d2910591bd657263744ce0c82aef data\rubycollection\recipe\ruby_ingots_from_ruby_cluster.json
+a0ed479a838d33017513473cfc9f1d341c57c152 data\rubycollection\recipe\ruby_axe.json
 fec0baac3e4216764f4bf4bd543e7e5899a32bff data\rubycollection\recipe\ruby_shovel.json
 f9d54bb0a9da5e64acc44fd28c97e270beb44b4d data\rubycollection\recipe\ruby_ingot_from_rubies.json
 06b9385eabb0530977b94b1e9d2b0d9a7bce53e7 data\rubycollection\advancement\recipes\misc\ruby_shovel.json
