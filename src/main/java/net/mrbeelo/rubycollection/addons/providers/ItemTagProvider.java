@@ -25,5 +25,6 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.CHEST_ARMOR).add(ModItems.RUBY_CHESTPLATE);
         getOrCreateTagBuilder(ItemTags.LEG_ARMOR).add(ModItems.RUBY_LEGGINGS);
         getOrCreateTagBuilder(ItemTags.FOOT_ARMOR).add(ModItems.RUBY_BOOTS);
+        getOrCreateTagBuilder(ItemTags.BEACON_PAYMENT_ITEMS).add(ModItems.RUBY);
     }
 }

@@ -4,7 +4,7 @@
       "id": "rubycollection:ruby",
       "count": 1
     },
-    "title": "The beginning of a new ore",
+    "title": "The Ruby",
     "description": "Obtain your first Ruby.",
     "background": "rubycollection:textures/block/ruby_block.png",
     "frame": "task",
