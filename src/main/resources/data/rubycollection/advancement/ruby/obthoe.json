@@ -14,17 +14,9 @@
     "parent": "rubycollection:ruby/obtingot",
     "criteria": {
       "requirementhoe": {
-        "trigger": "minecraft:inventory_changed",
+        "trigger": "minecraft:recipe_crafted",
         "conditions": {
-          "player": {
-            "type": "minecraft:player"
-          },
-          "items": [
-            {
-              "items": "rubycollection:ruby_hoe",
-              "count": 1
-            }
-          ]
+          "recipe_id": "rubycollection:ruby_hoe"
         }
       }
     },

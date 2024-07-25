@@ -1,19 +1,19 @@
 {
   "display": {
     "icon": {
-      "id": "rubycollection:ruby_block",
+      "id": "rubycollection:ruby_ingot",
       "count": 1
     },
-    "title": "How many more do you need?",
-    "description": "Obtain a stack of Ruby Blocks",
+    "title": "How do you even end up in this situation???",
+    "description": "Obtain this EXACT amount of this EXACT item...",
     "frame": "challenge",
     "show_toast": false,
     "announce_to_chat": true,
-    "hidden": false
+    "hidden": true
   },
-  "parent": "rubycollection:ruby/obtblock",
+  "parent": "rubycollection:ruby/obtshardwhy",
   "criteria": {
-    "requirementbstack": {
+    "requirements53": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "player": {
@@ -21,8 +21,8 @@
         },
         "items": [
           {
-            "items": "rubycollection:ruby_block",
-            "count": 64
+            "items": "rubycollection:ruby_shard",
+            "count": 53
           }
         ]
       }
@@ -30,11 +30,11 @@
   },
   "requirements": [
     [
-      "requirementbstack"
+      "requirements53"
     ]
   ],
   "rewards": {
     "function": "rubycollection:gnome",
-    "experience": 3500
+    "experience": 2000
   }
 }

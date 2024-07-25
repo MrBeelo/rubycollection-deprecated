@@ -4,16 +4,16 @@
       "id": "rubycollection:ruby_block",
       "count": 1
     },
-    "title": "How many more do you need?",
-    "description": "Obtain a stack of Ruby Blocks",
+    "title": "Uhhhh",
+    "description": "Obtain more than a stack of Ruby Blocks.",
     "frame": "challenge",
     "show_toast": false,
     "announce_to_chat": true,
-    "hidden": false
+    "hidden": true
   },
-  "parent": "rubycollection:ruby/obtblock",
+  "parent": "rubycollection:ruby/obtbstack",
   "criteria": {
-    "requirementbstack": {
+    "requirementbmorestack": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "player": {
@@ -22,7 +22,10 @@
         "items": [
           {
             "items": "rubycollection:ruby_block",
-            "count": 64
+            "count": {
+              "min": 65,
+              "max": 99
+            }
           }
         ]
       }
@@ -30,11 +33,11 @@
   },
   "requirements": [
     [
-      "requirementbstack"
+      "requirementbmorestack"
     ]
   ],
   "rewards": {
     "function": "rubycollection:gnome",
-    "experience": 3500
+    "experience": 2000
   }
 }

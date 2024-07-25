@@ -16,7 +16,7 @@ public class RubycollectionDataGenerator implements DataGeneratorEntrypoint {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 		pack.addProvider(ModelProvider::new);
 		pack.addProvider(EnglishTranslationProvider::new);
-		pack.addProvider(BlockLootTableProvider::new);
+		pack.addProvider(SimpleBlockLootTableProvider::new);
 		pack.addProvider(BlockTagProvider::new);
 		pack.addProvider(ItemTagProvider::new);
 		pack.addProvider(RecipeProvider::new);
