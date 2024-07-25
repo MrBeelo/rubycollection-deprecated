@@ -1,9 +1,11 @@
 package net.mrbeelo.rubycollection.addons.providers.worldgen;
 
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.world.gen.feature.Feature;
@@ -19,17 +21,28 @@ public class ConfiguredFeature {
     //REGISTERING
 
     public static final RegistryKey<net.minecraft.world.gen.feature.ConfiguredFeature<?, ?>> OVERWORLD_RUBY_ORE_KEY = registerKey("overworld_ruby_ore");
+    public static final RegistryKey<net.minecraft.world.gen.feature.ConfiguredFeature<?, ?>> NETHER_RUBY_ORE_KEY = registerKey("nether_ruby_ore");
+    public static final RegistryKey<net.minecraft.world.gen.feature.ConfiguredFeature<?, ?>> END_RUBY_ORE_KEY = registerKey("end_ruby_ore");
 
     public static void bootstrap(Registerable<net.minecraft.world.gen.feature.ConfiguredFeature<?, ?>> context) {
         RuleTest stoneOreReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateOreReplaceables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
+        RuleTest netherOreReplaceables = new TagMatchRuleTest(BlockTags.BASE_STONE_NETHER);
+        RuleTest endOreReplaceables = new BlockMatchRuleTest(Blocks.END_STONE);
 
         List<OreFeatureConfig.Target> overworldRubyTargets = List.of(
                 OreFeatureConfig.createTarget(stoneOreReplaceables, ModBlocks.RUBY_ORE.getDefaultState()),
                 OreFeatureConfig.createTarget(deepslateOreReplaceables, ModBlocks.DEEPSLATE_RUBY_ORE.getDefaultState()));
 
-        register(context, OVERWORLD_RUBY_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldRubyTargets, 5, 0.5F));
+        List<OreFeatureConfig.Target> netherRubyTargets = List.of(
+                OreFeatureConfig.createTarget(netherOreReplaceables, ModBlocks.NETHER_RUBY_ORE.getDefaultState()));
 
+        List<OreFeatureConfig.Target> endRubyTargets = List.of(
+                OreFeatureConfig.createTarget(endOreReplaceables, ModBlocks.END_RUBY_ORE.getDefaultState()));
+
+        register(context, OVERWORLD_RUBY_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldRubyTargets, 5, 0.5F));
+        register(context, NETHER_RUBY_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherRubyTargets, 5, 0.5F));
+        register(context, END_RUBY_ORE_KEY, Feature.ORE, new OreFeatureConfig(endRubyTargets, 2, 0.7F));
 
     }
 

@@ -48,6 +48,12 @@
             "items": "rubycollection:ruby_helmet"
           },
           {
+            "items": "rubycollection:end_ruby_ore"
+          },
+          {
+            "items": "rubycollection:nether_ruby_ore"
+          },
+          {
             "items": "rubycollection:deepslate_ruby_ore"
           },
           {

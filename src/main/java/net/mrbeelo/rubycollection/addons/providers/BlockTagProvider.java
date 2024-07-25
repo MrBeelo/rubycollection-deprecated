@@ -19,15 +19,20 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(ModTags.Blocks.RUBY_ORES)
                 .add(ModBlocks.RUBY_ORE)
-                .add(ModBlocks.DEEPSLATE_RUBY_ORE);
+                .add(ModBlocks.DEEPSLATE_RUBY_ORE)
+                .add(ModBlocks.NETHER_RUBY_ORE)
+                .add(ModBlocks.END_RUBY_ORE);
+
+
+        getOrCreateTagBuilder(ModTags.Blocks.RUBY_BLOCKS)
+                .add(ModBlocks.RUBY_BLOCK)
+                .addTag(ModTags.Blocks.RUBY_ORES);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.RUBY_BLOCK)
-                .addTag(ModTags.Blocks.RUBY_ORES);
+                .addTag(ModTags.Blocks.RUBY_BLOCKS);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.RUBY_BLOCK)
-                .addTag(ModTags.Blocks.RUBY_ORES);
+                .addTag(ModTags.Blocks.RUBY_BLOCKS);
 
         getOrCreateTagBuilder(BlockTags.BEACON_BASE_BLOCKS)
                 .add(ModBlocks.RUBY_BLOCK);

@@ -1,3 +1,7 @@
-// 1.21	2024-07-25T22:06:05.5046968	The Ruby Collection/World Generator
+// 1.21	2024-07-26T01:28:02.8821232	The Ruby Collection/World Generator
+634c700e110ea56799fe11e0f5b2f36197a3109b data\rubycollection\worldgen\configured_feature\end_ruby_ore.json
+f82b048471afe36ba3917153e5cdbeb516969786 data\rubycollection\worldgen\configured_feature\nether_ruby_ore.json
 02eef9c8532b3e1b6394acde22b97d6f9603eae7 data\rubycollection\worldgen\configured_feature\overworld_ruby_ore.json
-12d42e0fea10ffa85414cb96091156b2d2e3d8c9 data\rubycollection\worldgen\placed_feature\overworld_ruby_ore.json
+5f1e8dd784d2a5a777c2f29b3138acccd428bb02 data\rubycollection\worldgen\placed_feature\nether_ruby_ore.json
+1ebb7eabdc0bfc21735995ed6faa90c087a6f456 data\rubycollection\worldgen\placed_feature\overworld_ruby_ore.json
+4161201b33d9e65aee3cb710036ddf651d9c0a90 data\rubycollection\worldgen\placed_feature\end_ruby_ore.json

@@ -52,6 +52,8 @@ public class EnglishTranslationProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.RUBY_BLOCK, "Ruby Block");
         translationBuilder.add(ModBlocks.RUBY_ORE, "Ruby Ore");
         translationBuilder.add(ModBlocks.DEEPSLATE_RUBY_ORE, "Deepslate Ruby Ore");
+        translationBuilder.add(ModBlocks.NETHER_RUBY_ORE, "Nether Ruby Ore");
+        translationBuilder.add(ModBlocks.END_RUBY_ORE, "End Ruby Ore");
         addSoundEvent(translationBuilder, ModSounds.RUBY_BLOCK_BREAK, "Ruby Block Broken");
         addSoundEvent(translationBuilder, ModSounds.RUBY_BLOCK_FALL, "Ruby Block Fallen");
         addSoundEvent(translationBuilder, ModSounds.RUBY_BLOCK_HIT, "Ruby Block Hit");

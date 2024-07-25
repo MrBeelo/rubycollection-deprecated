@@ -12,5 +12,17 @@ public class ModBiomeModification {
                 GenerationStep.Feature.UNDERGROUND_ORES,
                 PlacedFeature.OVERWORLD_RUBY_ORE_KEY
         );
+
+        BiomeModifications.addFeature(
+                BiomeSelectors.foundInTheNether(),
+                GenerationStep.Feature.UNDERGROUND_ORES,
+                PlacedFeature.NETHER_RUBY_ORE_KEY
+        );
+
+        BiomeModifications.addFeature(
+                BiomeSelectors.foundInTheEnd(),
+                GenerationStep.Feature.UNDERGROUND_ORES,
+                PlacedFeature.END_RUBY_ORE_KEY
+        );
     }
 }

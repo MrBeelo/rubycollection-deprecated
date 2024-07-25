@@ -16,12 +16,20 @@ public class PlacedFeature {
     //REGISTERING
 
     public static final RegistryKey<net.minecraft.world.gen.feature.PlacedFeature> OVERWORLD_RUBY_ORE_KEY = registerKey("overworld_ruby_ore");
+    public static final RegistryKey<net.minecraft.world.gen.feature.PlacedFeature> NETHER_RUBY_ORE_KEY = registerKey("nether_ruby_ore");
+    public static final RegistryKey<net.minecraft.world.gen.feature.PlacedFeature> END_RUBY_ORE_KEY = registerKey("end_ruby_ore");
 
     public static void bootstrap(Registerable<net.minecraft.world.gen.feature.PlacedFeature> context) {
         RegistryEntryLookup<net.minecraft.world.gen.feature.ConfiguredFeature<?, ?>> registryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, OVERWORLD_RUBY_ORE_KEY, registryLookup.getOrThrow(ConfiguredFeature.OVERWORLD_RUBY_ORE_KEY),
-                Modifiers.modifiersWithCount(5, HeightRangePlacementModifier.uniform(YOffset.fixed(-25), YOffset.fixed(64))));
+                Modifiers.modifiersWithCount(5, HeightRangePlacementModifier.uniform(YOffset.fixed(-24), YOffset.fixed(64))));
+
+        register(context, NETHER_RUBY_ORE_KEY, registryLookup.getOrThrow(ConfiguredFeature.NETHER_RUBY_ORE_KEY),
+                Modifiers.modifiersWithCount(5, HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
+
+        register(context, END_RUBY_ORE_KEY, registryLookup.getOrThrow(ConfiguredFeature.END_RUBY_ORE_KEY),
+                Modifiers.modifiersWithCount(2, HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
     }
 
     //METHODS
