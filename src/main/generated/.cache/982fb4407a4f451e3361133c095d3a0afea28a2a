@@ -1,9 +1,8 @@
-// 1.21	2024-07-25T02:55:19.4852544	The Ruby Collection/Tags for minecraft:item
-5a48408902d2d688458195140401720ff9a7d9ec data\minecraft\tags\item\trimmable_armor.json
+// 1.21	2024-07-25T14:52:03.6687156	The Ruby Collection/Tags for minecraft:item
 cc764df399c8a15671a9e8dfd5f4b37bc1221459 data\minecraft\tags\item\axes.json
 3b9fce6299b343fa10e3aa559786dd557cef929e data\minecraft\tags\item\hoes.json
-6dac3997a164a8585d60f7be0195d3c6fea562bf data\minecraft\tags\item\pickaxes.json
 8ce9b9ec14d5de78c39c33e6cb18e13947ae810c data\minecraft\tags\item\swords.json
+6dac3997a164a8585d60f7be0195d3c6fea562bf data\minecraft\tags\item\pickaxes.json
 1bb967ee1c56e37b5bf53f1792696fa1888cfbdf data\minecraft\tags\item\head_armor.json
 c312c861a76aa502dca9bef254a3b5cf3d0a2e1d data\minecraft\tags\item\shovels.json
 46950513c2bd5bd912891b281168ee1fa670e409 data\minecraft\tags\item\foot_armor.json

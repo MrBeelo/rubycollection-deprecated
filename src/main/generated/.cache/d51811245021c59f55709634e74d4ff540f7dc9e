@@ -1,4 +1,4 @@
-// 1.21	2024-07-25T02:55:19.4817611	The Ruby Collection/Model Definitions
+// 1.21	2024-07-25T14:52:03.6647156	The Ruby Collection/Model Definitions
 73a25336f2405990688bddcc7278c6d37b34e1df assets\rubycollection\models\item\ruby_helmet_diamond_trim.json
 21d3844b847ee24ec2625bcae758757d7aab3917 assets\rubycollection\models\item\ruby_ore.json
 3028c33fa6d75f33687a338239a516546ecb4b0f assets\rubycollection\models\item\ruby_boots_lapis_trim.json
@@ -9,8 +9,8 @@ f800fd22f1ccc5eb07a89821d573a53998bc531d assets\rubycollection\models\item\ruby_
 1f9f7157ab2197e8af328bf01beba69367addb81 assets\rubycollection\blockstates\deepslate_ruby_ore.json
 5b540c8f90746edc7acd973f1496224948856b47 assets\rubycollection\models\item\ruby_helmet_amethyst_trim.json
 15a472956d8f26fd83c0671c0133f9496b1b098a assets\rubycollection\models\item\ruby_helmet_gold_trim.json
-291e156fcc7f0d34d999eced9b70d313843e3eb9 assets\rubycollection\models\item\ruby_leggings_gold_trim.json
 d3589bc1873390f38fdd839ccd7f3c5209dac0d3 assets\rubycollection\models\item\ruby_boots.json
+291e156fcc7f0d34d999eced9b70d313843e3eb9 assets\rubycollection\models\item\ruby_leggings_gold_trim.json
 d08202d1031eabd4410b2744bc4a85f09fcfe198 assets\rubycollection\models\item\ruby_leggings_diamond_trim.json
 30106ec4301b6bcb471488be5991281baad68821 assets\rubycollection\models\item\ruby_pickaxe.json
 3c4e3adb465c83148203c232a6fac04352cbf514 assets\rubycollection\models\item\ruby_block.json
@@ -58,6 +58,6 @@ a1f1a7d2cb95fa98eaf5229256fc8c69f64b91bb assets\rubycollection\models\item\ruby_
 2a461804839bac342a9825fbe4e8f31a201df681 assets\rubycollection\models\item\ruby_boots_copper_trim.json
 d93cb4c12678911a43b6e11777b559a730a07513 assets\rubycollection\models\item\ruby_helmet_lapis_trim.json
 3cc78a11010766eb67f90837c89466e5528210e5 assets\rubycollection\models\item\ruby_leggings_copper_trim.json
-b7dbc34641a7e477496e8b7c2bdd281fc54fd5ff assets\rubycollection\models\block\ruby_block.json
 a8ec4c026103186ce783bb6a8ab5789a38ace426 assets\rubycollection\models\item\ruby_chestplate_diamond_trim.json
+b7dbc34641a7e477496e8b7c2bdd281fc54fd5ff assets\rubycollection\models\block\ruby_block.json
 1fe317ff1c25ba0905ca995d09d08bd5115a52b3 assets\rubycollection\models\item\ruby_chestplate_iron_trim.json
