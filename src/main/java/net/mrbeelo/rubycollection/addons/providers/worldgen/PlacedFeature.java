@@ -29,7 +29,7 @@ public class PlacedFeature {
                 Modifiers.modifiersCount(5, HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
 
         register(context, END_RUBY_ORE_KEY, registryLookup.getOrThrow(ConfiguredFeature.END_RUBY_ORE_KEY),
-                Modifiers.modifiersCount(3, HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
+                Modifiers.modifiersCount(5, HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
     }
 
     //METHODS
