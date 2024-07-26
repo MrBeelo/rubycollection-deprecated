@@ -43,7 +43,7 @@ public class ConfiguredFeature {
 
         register(context, OVERWORLD_RUBY_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldRubyTargets, 5, 0.5F));
         register(context, NETHER_RUBY_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherRubyTargets, 5, 0.2F));
-        register(context, END_RUBY_ORE_KEY, Feature.ORE, new OreFeatureConfig(endRubyTargets, 5));
+        register(context, END_RUBY_ORE_KEY, Feature.ORE, new OreFeatureConfig(endRubyTargets, 2));
 
         //METHODS
 
