@@ -31,30 +31,23 @@
             },
             {
               "type": "minecraft:item",
-              "name": "rubycollection:ruby_shard",
-              "functions": [
+              "name": "minecraft:netherrack",
+              "conditions": [
                 {
-                  "function": "minecraft:apply_bonus",
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops"
-                },
-                {
-                  "function": "minecraft:explosion_decay"
-                },
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "type": "minecraft:uniform",
-                    "min": 1,
-                    "max": 3
-                  }
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
                 }
               ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "rubycollection:ruby_shard"
             }
           ]
         }
       ]
     }
   ],
-  "random_sequence": "rubycollection:blocks/nether_ruby_ore"
+  "random_sequence": "minecraft:blocks/diamond_ore"
 }
+
