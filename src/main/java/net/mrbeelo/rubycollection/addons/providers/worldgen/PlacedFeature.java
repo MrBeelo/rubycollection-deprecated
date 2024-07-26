@@ -23,13 +23,13 @@ public class PlacedFeature {
         RegistryEntryLookup<net.minecraft.world.gen.feature.ConfiguredFeature<?, ?>> registryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, OVERWORLD_RUBY_ORE_KEY, registryLookup.getOrThrow(ConfiguredFeature.OVERWORLD_RUBY_ORE_KEY),
-                Modifiers.modifiersWithCount(5, HeightRangePlacementModifier.uniform(YOffset.fixed(-24), YOffset.fixed(64))));
+                Modifiers.modifiersCount(5, HeightRangePlacementModifier.uniform(YOffset.fixed(-24), YOffset.fixed(64))));
 
         register(context, NETHER_RUBY_ORE_KEY, registryLookup.getOrThrow(ConfiguredFeature.NETHER_RUBY_ORE_KEY),
-                Modifiers.modifiersWithCount(5, HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
+                Modifiers.modifiersCount(5, HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
 
         register(context, END_RUBY_ORE_KEY, registryLookup.getOrThrow(ConfiguredFeature.END_RUBY_ORE_KEY),
-                Modifiers.modifiersWithCount(2, HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
+                Modifiers.modifiersCount(5, HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
     }
 
     //METHODS
@@ -50,11 +50,11 @@ public class PlacedFeature {
             return List.of(countModifier, SquarePlacementModifier.of(), heightModifier, BiomePlacementModifier.of());
         }
 
-        public static List<PlacementModifier> modifiersWithCount(int count, PlacementModifier heightModifier) {
+        public static List<PlacementModifier> modifiersCount(int count, PlacementModifier heightModifier) {
             return modifiers(CountPlacementModifier.of(count), heightModifier);
         }
 
-        public static List<PlacementModifier> modifiersWithRarity(int chance, PlacementModifier heightModifier) {
+        public static List<PlacementModifier> modifiersRarity(int chance, PlacementModifier heightModifier) {
             return modifiers(RarityFilterPlacementModifier.of(chance), heightModifier);
         }
     }

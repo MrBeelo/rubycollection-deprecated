@@ -1,4 +1,4 @@
-// 1.21	2024-07-26T01:28:02.8791231	The Ruby Collection/Model Definitions
+// 1.21	2024-07-26T12:59:07.8070234	The Ruby Collection/Model Definitions
 73a25336f2405990688bddcc7278c6d37b34e1df assets\rubycollection\models\item\ruby_helmet_diamond_trim.json
 21d3844b847ee24ec2625bcae758757d7aab3917 assets\rubycollection\models\item\ruby_ore.json
 3028c33fa6d75f33687a338239a516546ecb4b0f assets\rubycollection\models\item\ruby_boots_lapis_trim.json
@@ -8,8 +8,8 @@ f800fd22f1ccc5eb07a89821d573a53998bc531d assets\rubycollection\models\item\ruby_
 05ec6fb484343dac3afdbe495ee61c774453de61 assets\rubycollection\models\item\ruby_boots_amethyst_trim.json
 3a0bb336cf6654f0f134cc8bd77d8f1535c17235 assets\rubycollection\models\item\ruby_helmet_netherite_trim.json
 1f9f7157ab2197e8af328bf01beba69367addb81 assets\rubycollection\blockstates\deepslate_ruby_ore.json
-15a472956d8f26fd83c0671c0133f9496b1b098a assets\rubycollection\models\item\ruby_helmet_gold_trim.json
 5b540c8f90746edc7acd973f1496224948856b47 assets\rubycollection\models\item\ruby_helmet_amethyst_trim.json
+15a472956d8f26fd83c0671c0133f9496b1b098a assets\rubycollection\models\item\ruby_helmet_gold_trim.json
 291e156fcc7f0d34d999eced9b70d313843e3eb9 assets\rubycollection\models\item\ruby_leggings_gold_trim.json
 d3589bc1873390f38fdd839ccd7f3c5209dac0d3 assets\rubycollection\models\item\ruby_boots.json
 dbd33424791d0c562cf5d9aacb455ae4dcadd4a7 assets\rubycollection\models\block\end_ruby_ore.json
