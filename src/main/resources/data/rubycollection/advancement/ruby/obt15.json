@@ -5,7 +5,7 @@
       "count": 1
     },
     "title": "Getting Rubied up",
-    "description": "Obtain 10 Rubies.",
+    "description": "Obtain 15 Rubies.",
     "frame": "task",
     "show_toast": false,
     "announce_to_chat": true,
@@ -22,7 +22,7 @@
         "items": [
           {
             "items": "rubycollection:ruby",
-            "count": 10
+            "count": 15
           }
         ]
       }

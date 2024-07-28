@@ -11,7 +11,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "rubycollection:ruby/obt10",
+  "parent": "rubycollection:ruby/obt15",
   "criteria": {
     "requirementblock": {
       "trigger": "minecraft:inventory_changed",

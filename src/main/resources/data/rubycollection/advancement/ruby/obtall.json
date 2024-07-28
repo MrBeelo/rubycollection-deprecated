@@ -5,7 +5,7 @@
       "count": 1
     },
     "title": "Completely Rubied Up",
-    "description": "Obtain ALL Ruby items.",
+    "description": "Obtain ALL Ruby and Kokaina items.",
     "frame": "challenge",
     "show_toast": false,
     "announce_to_chat": true,
@@ -20,6 +20,15 @@
           "type": "minecraft:player"
         },
         "items": [
+          {
+            "items": "rubycollection:kokaina_seed"
+          },
+          {
+            "items": "rubycollection:kokaina"
+          },
+          {
+            "items": "rubycollection:ruby_knocker"
+          },
           {
             "items": "rubycollection:ruby_hoe"
           },
