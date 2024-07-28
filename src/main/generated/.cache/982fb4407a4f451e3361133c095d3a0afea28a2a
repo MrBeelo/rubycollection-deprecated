@@ -1,15 +1,16 @@
-// 1.21	2024-07-26T22:55:32.001048	The Ruby Collection/Tags for minecraft:item
+// 1.21	2024-07-28T03:05:37.8982151	The Ruby Collection/Tags for minecraft:item
 cc764df399c8a15671a9e8dfd5f4b37bc1221459 data\minecraft\tags\item\axes.json
 3b9fce6299b343fa10e3aa559786dd557cef929e data\minecraft\tags\item\hoes.json
 5a48408902d2d688458195140401720ff9a7d9ec data\rubycollection\tags\item\ruby_armor.json
 1bb967ee1c56e37b5bf53f1792696fa1888cfbdf data\minecraft\tags\item\head_armor.json
-9382a140d7562a09998f10d681ff0e84332d4eea data\rubycollection\tags\item\ruby_items.json
+c94ef6f8cdd62759f60c5ab737dab25a99aa2c4c data\rubycollection\tags\item\ruby_items.json
 c312c861a76aa502dca9bef254a3b5cf3d0a2e1d data\minecraft\tags\item\shovels.json
 46950513c2bd5bd912891b281168ee1fa670e409 data\minecraft\tags\item\foot_armor.json
 face22b02cd17440cfd1d10811453de998e847d1 data\minecraft\tags\item\chest_armor.json
 a20ef82220493fd123440155b67c05bba8272ea0 data\minecraft\tags\item\beacon_payment_items.json
-a6cca48434cf263dbd51a8fecfb3f263af81cf6c data\rubycollection\tags\item\ruby_tools.json
+8d16152ee7734a6848f46877980a75c3e4ccb051 data\rubycollection\tags\item\ruby_tools.json
 6dac3997a164a8585d60f7be0195d3c6fea562bf data\minecraft\tags\item\pickaxes.json
-8ce9b9ec14d5de78c39c33e6cb18e13947ae810c data\minecraft\tags\item\swords.json
+c6af82184168e9b9cba781057e31dcbee20094e9 data\minecraft\tags\item\swords.json
 6628c100d8ca0b16eb93d7face8d301545ad2a11 data\rubycollection\tags\item\ruby_variants.json
+d11174633edf979682c5b2bee64990ea2fec5d5b data\rubycollection\tags\item\kokaina_family.json
 cd8be38aa4b3613416a1cb217c8fad433ced10e5 data\minecraft\tags\item\leg_armor.json
