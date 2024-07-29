@@ -1,3 +1,5 @@
 **RUBIESSSS!**
 
-This mod adds a new Ruby ore to minecraft, with help from TurtyWurty's tutorials.
+!WARNING!
+THIS MOD IS NOT MADE FOR GENERAL USE, BUT FOR ONE OF MY SERVERS
+PLEASE DOWNLOAD THE ORIGINAL rubycollection-1.21!
