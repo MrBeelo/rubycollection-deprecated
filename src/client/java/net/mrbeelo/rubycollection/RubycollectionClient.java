@@ -3,7 +3,7 @@ package net.mrbeelo.rubycollection;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.render.RenderLayer;
-import net.mrbeelo.rubycollection.addons.block.ModBlocks;
+import net.mrbeelo.rubycollection.modaddons.ModBlocks;
 
 public class RubycollectionClient implements ClientModInitializer {
 	@Override

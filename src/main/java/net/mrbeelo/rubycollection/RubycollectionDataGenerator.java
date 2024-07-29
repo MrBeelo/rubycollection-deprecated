@@ -4,30 +4,30 @@ import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
-import net.mrbeelo.rubycollection.addons.block.BlockTagProvider;
-import net.mrbeelo.rubycollection.addons.util.LootTableProvider;
-import net.mrbeelo.rubycollection.addons.item.ItemTagProvider;
-import net.mrbeelo.rubycollection.addons.worldgen.WorldGeneratorProvider;
-import net.mrbeelo.rubycollection.addons.util.EnglishTranslationProvider;
-import net.mrbeelo.rubycollection.addons.util.ModelProvider;
-import net.mrbeelo.rubycollection.addons.util.RecipeProvider;
-import net.mrbeelo.rubycollection.addons.villager.PoiTagProvider;
-import net.mrbeelo.rubycollection.addons.worldgen.ConfiguredFeature;
-import net.mrbeelo.rubycollection.addons.worldgen.PlacedFeature;
+import net.mrbeelo.rubycollection.datagen.ModBlockTagProvider;
+import net.mrbeelo.rubycollection.datagen.ModLootTableProvider;
+import net.mrbeelo.rubycollection.datagen.ModItemTagProvider;
+import net.mrbeelo.rubycollection.datagen.ModWorldGeneratorProvider;
+import net.mrbeelo.rubycollection.datagen.ModTranslationProvider;
+import net.mrbeelo.rubycollection.datagen.ModModelProvider;
+import net.mrbeelo.rubycollection.datagen.ModRecipeProvider;
+import net.mrbeelo.rubycollection.datagen.ModPoiTagProvider;
+import net.mrbeelo.rubycollection.datagen.worldgen.ConfiguredFeature;
+import net.mrbeelo.rubycollection.datagen.worldgen.PlacedFeature;
 
 
 public class RubycollectionDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
-		pack.addProvider(ModelProvider::new);
-		pack.addProvider(EnglishTranslationProvider::new);
-		pack.addProvider(LootTableProvider::new);
-		pack.addProvider(BlockTagProvider::new);
-		pack.addProvider(ItemTagProvider::new);
-		pack.addProvider(RecipeProvider::new);
-		pack.addProvider(WorldGeneratorProvider::new);
-		pack.addProvider(PoiTagProvider::new);
+		pack.addProvider(ModModelProvider::new);
+		pack.addProvider(ModTranslationProvider::new);
+		pack.addProvider(ModLootTableProvider::new);
+		pack.addProvider(ModBlockTagProvider::new);
+		pack.addProvider(ModItemTagProvider::new);
+		pack.addProvider(ModRecipeProvider::new);
+		pack.addProvider(ModWorldGeneratorProvider::new);
+		pack.addProvider(ModPoiTagProvider::new);
 	}
 
 	@Override

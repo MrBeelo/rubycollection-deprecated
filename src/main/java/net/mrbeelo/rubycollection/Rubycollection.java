@@ -3,15 +3,7 @@ package net.mrbeelo.rubycollection;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
-import net.mrbeelo.rubycollection.addons.block.ModBlocks;
-import net.mrbeelo.rubycollection.addons.effect.ModEffects;
-import net.mrbeelo.rubycollection.addons.item.ModArmorMaterials;
-import net.mrbeelo.rubycollection.addons.item.ModItemGroups;
-import net.mrbeelo.rubycollection.addons.item.ModItems;
-import net.mrbeelo.rubycollection.addons.sound.ModSounds;
-import net.mrbeelo.rubycollection.addons.villager.ModCustomTrades;
-import net.mrbeelo.rubycollection.addons.villager.ModVillagers;
-import net.mrbeelo.rubycollection.addons.worldgen.ModBiomeModification;
+import net.mrbeelo.rubycollection.modaddons.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
