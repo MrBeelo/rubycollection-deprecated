@@ -8,7 +8,6 @@ import net.minecraft.text.TranslatableTextContent;
 import net.minecraft.village.VillagerProfession;
 import net.mrbeelo.rubycollection.Rubycollection;
 import net.mrbeelo.rubycollection.modaddons.ModBlocks;
-import net.mrbeelo.rubycollection.modaddons.ModEffects;
 import net.mrbeelo.rubycollection.modaddons.ModItemGroups;
 import net.mrbeelo.rubycollection.modaddons.ModItems;
 import net.mrbeelo.rubycollection.modaddons.ModSounds;
@@ -48,10 +47,7 @@ public class ModTranslationProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.RUBY_INGOT, "Ruby Ingot");
         translationBuilder.add(ModItems.RUBY_CLUSTER, "Ruby Cluster");
         translationBuilder.add(ModItems.RUBY_SHARD, "Ruby Shard");
-        translationBuilder.add(ModItems.KOKAINA, "Kokaina");
-        translationBuilder.add(ModItems.KOKAINA_SEED, "Kokaina Seed");
-        translationBuilder.add(ModItems.KOKAINA_LEAF, "Kokaina Leaf");
-        translationBuilder.add(ModItems.RUBY_KNOCKER, "Overly named device featuring retractable hand able of pushing living entities away from entity using device");
+        translationBuilder.add(ModItems.RUBY_KNOCKER, "Ruby Knocker");
         translationBuilder.add(ModItems.RUBY_SWORD, "Ruby Sword");
         translationBuilder.add(ModItems.RUBY_PICKAXE, "Ruby Pickaxe");
         translationBuilder.add(ModItems.RUBY_AXE, "Ruby Axe");
@@ -66,14 +62,11 @@ public class ModTranslationProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.DEEPSLATE_RUBY_ORE, "Deepslate Ruby Ore");
         translationBuilder.add(ModBlocks.NETHER_RUBY_ORE, "Nether Ruby Ore");
         translationBuilder.add(ModBlocks.END_RUBY_ORE, "End Ruby Ore");
-        translationBuilder.add(ModEffects.HIGH.value(), "High");
-        translationBuilder.add(ModEffects.HIGH_SOUND.value(), "High Sound");
         addSoundEvent(translationBuilder, ModSounds.RUBY_BLOCK_BREAK, "Ruby Block Broken");
         addSoundEvent(translationBuilder, ModSounds.RUBY_BLOCK_FALL, "Ruby Block Fallen");
         addSoundEvent(translationBuilder, ModSounds.RUBY_BLOCK_HIT, "Ruby Block Hit");
         addSoundEvent(translationBuilder, ModSounds.RUBY_BLOCK_STEP, "Ruby Block Stepped On");
         addSoundEvent(translationBuilder, ModSounds.RUBY_BLOCK_PLACE, "Ruby Block Placed");
-        addSoundEvent(translationBuilder, ModSounds.HIGH, "High Person Running");
         addText(translationBuilder, ModItemGroups.RUBY_TITLE, "The Ruby Collection");
         addVillager(translationBuilder, ModVillagers.RUBERT, "Rubert");
     }

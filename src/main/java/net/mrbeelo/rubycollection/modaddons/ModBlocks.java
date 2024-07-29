@@ -19,7 +19,6 @@ public class ModBlocks {
     public static final Block DEEPSLATE_RUBY_ORE = registerWithItem("deepslate_ruby_ore", new Block(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_EMERALD_ORE)));
     public static final Block NETHER_RUBY_ORE = registerWithItem("nether_ruby_ore", new Block(AbstractBlock.Settings.copy(Blocks.EMERALD_ORE)));
     public static final Block END_RUBY_ORE = registerWithItem("end_ruby_ore", new Block(AbstractBlock.Settings.copy(Blocks.EMERALD_ORE)));
-    public static final Block KOKAINA_CROP = Registry.register(Registries.BLOCK, Rubycollection.id("kokaina_crop"), new KokainaCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
 
     //METHODS
 
@@ -29,7 +28,7 @@ public class ModBlocks {
 
     public static <T extends Block> T registerWithItem(String name, T block, Item.Settings settings) {
         T registered = register(name, block);
-        Item.Settings updatedSettings = settings.maxCount(99);
+        Item.Settings updatedSettings = settings.maxCount(64);
         ModItems.register(name, new BlockItem(registered, updatedSettings));
         return registered;
     }

@@ -16,7 +16,6 @@ public class ModSounds {
     public static final SoundEvent RUBY_BLOCK_PLACE = register("ruby_block_place");
     public static final SoundEvent RUBY_BLOCK_HIT = register("ruby_block_hit");
     public static final SoundEvent RUBY_BLOCK_FALL = register("ruby_block_fall");
-    public static final SoundEvent HIGH = register("high");
 
     public static final BlockSoundGroup RUBY_BLOCK_SOUNDS = new BlockSoundGroup(1f, 1f,
             ModSounds.RUBY_BLOCK_BREAK, ModSounds.RUBY_BLOCK_STEP, ModSounds.RUBY_BLOCK_PLACE,
