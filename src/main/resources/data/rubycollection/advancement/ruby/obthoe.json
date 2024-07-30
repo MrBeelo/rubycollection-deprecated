@@ -4,7 +4,7 @@
         "id": "rubycollection:ruby_hoe",
         "count": 1
       },
-      "title": "Why??",
+      "title": "UR MOM XDD",
       "description": "Waste 2 Ruby Ingots",
       "frame": "challenge",
       "show_toast": false,
@@ -26,6 +26,7 @@
       ]
     ],
     "rewards": {
+      "function": "rubycollection:gnome",
       "experience": 1000
     }
   }

@@ -23,6 +23,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         //REGISTERING (ONLY BLOCKS THAT DROP THEMSELVES
 
         addDrop(ModBlocks.RUBY_BLOCK);
+
+        LootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.KOKAINA_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(CropBlock.AGE, 3));
+        addDrop(ModBlocks.KOKAINA_CROP, cropDrops(ModBlocks.KOKAINA_CROP, ModItems.KOKAINA, ModItems.KOKAINA_SEED, builder));
     }
 }
 

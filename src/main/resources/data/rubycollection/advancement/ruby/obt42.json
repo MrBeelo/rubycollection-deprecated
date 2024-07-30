@@ -4,16 +4,16 @@
       "id": "rubycollection:ruby",
       "count": 1
     },
-    "title": "Nice XD",
-    "description": ":)",
-    "frame": "challenge",
+    "title": "Life is Ruby",
+    "description": "Obtain *LIFE* Rubies.",
+    "frame": "task",
     "show_toast": false,
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "rubycollection:ruby/obt15",
+  "parent": "rubycollection:ruby/root",
   "criteria": {
-    "requirementnice": {
+    "requirement42": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "player": {
@@ -22,7 +22,7 @@
         "items": [
           {
             "items": "rubycollection:ruby",
-            "count": 69
+            "count": 42
           }
         ]
       }
@@ -30,11 +30,11 @@
   },
   "requirements": [
     [
-      "requirementnice"
+      "requirement42"
     ]
   ],
   "rewards": {
     "function": "rubycollection:gnome",
-    "experience": 2000
+    "experience": 1000
   }
 }

@@ -18,10 +18,10 @@ public class ModEffects {
 
     //REGISTERING
 
-    public static RegistryEntry<StatusEffect> HIGH = register("high", new HighEffect(StatusEffectCategory.HARMFUL, 6750054).addAttributeModifier(
+    public static RegistryEntry<StatusEffect> HIGH = register("high", new HighEffect(StatusEffectCategory.HARMFUL, 3124687).addAttributeModifier(
             EntityAttributes.GENERIC_MOVEMENT_SPEED, Rubycollection.id("effect.speed"), 1.2, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
-    public static RegistryEntry<StatusEffect> HIGH_INITIALIZER = register("high_initializer", new HighInitializer(StatusEffectCategory.HARMFUL, 6750054));
+    public static RegistryEntry<StatusEffect> HIGH_INITIALIZER = register("high_initializer", new HighInitializer(StatusEffectCategory.HARMFUL, 3124687));
 
     //METHODS
 

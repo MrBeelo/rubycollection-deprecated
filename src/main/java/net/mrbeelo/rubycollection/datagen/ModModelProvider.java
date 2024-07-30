@@ -22,6 +22,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_RUBY_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_RUBY_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_RUBY_ORE);
+        blockStateModelGenerator.registerCrop(ModBlocks.KOKAINA_CROP, KokainaCropBlock.AGE, 0, 1, 2, 3);
     }
 
     @Override
@@ -30,6 +31,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RUBY_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RUBY_CLUSTER, Models.GENERATED);
         itemModelGenerator.register(ModItems.RUBY_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.KOKAINA, Models.GENERATED);
+        itemModelGenerator.register(ModItems.KOKAINA_LEAF, Models.GENERATED);
         itemModelGenerator.register(ModItems.RUBY_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RUBY_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RUBY_AXE, Models.HANDHELD);

@@ -4,16 +4,16 @@
       "id": "rubycollection:ruby",
       "count": 1
     },
-    "title": "Nice XD",
-    "description": ":)",
+    "title": "ok you DON'T know what this means to me...",
+    "description": "86",
     "frame": "challenge",
     "show_toast": false,
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "rubycollection:ruby/obt15",
+  "parent": "rubycollection:ruby/obtstack",
   "criteria": {
-    "requirementnice": {
+    "requirement86": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "player": {
@@ -22,7 +22,7 @@
         "items": [
           {
             "items": "rubycollection:ruby",
-            "count": 69
+            "count": 86
           }
         ]
       }
@@ -30,11 +30,12 @@
   },
   "requirements": [
     [
-      "requirementnice"
+      "requirement86"
     ]
   ],
   "rewards": {
     "function": "rubycollection:gnome",
-    "experience": 2000
+    "experience": 3000
   }
 }
+  
