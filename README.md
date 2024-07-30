@@ -1,3 +1,5 @@
 **RUBIESSSS!**
 
-This mod adds a new Ruby ore to minecraft, along with its ore, armor, tools, a new villager, and more!
+!WARNING!
+THIS MOD IS NOT MADE FOR GENERAL USE, BUT FOR ONE OF MY SERVERS /
+PLEASE DOWNLOAD THE ORIGINAL rubycollection-1.21!
