@@ -9,8 +9,7 @@ public class ModFoods {
             .alwaysEdible()
             .nutrition(6)
             .saturationModifier(0.4F)
-            .statusEffect(new StatusEffectInstance(ModEffects.HIGH, 460, 0), 1.0f)
-            .statusEffect(new StatusEffectInstance(ModEffects.HIGH_SOUND, 3, 0), 1.0f)
+            .statusEffect(new StatusEffectInstance(ModEffects.HIGH_INITIALIZER, 3, 0, false, false), 1.0f)
             .build();
 }
 
