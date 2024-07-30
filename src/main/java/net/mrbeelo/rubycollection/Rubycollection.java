@@ -24,7 +24,6 @@ public class Rubycollection implements ModInitializer {
 		ModSounds.load();
 		ModVillagers.load();
 		ModCustomTrades.load();
-		ModEffects.load();
 	}
 
 	public static Identifier id(String path) {

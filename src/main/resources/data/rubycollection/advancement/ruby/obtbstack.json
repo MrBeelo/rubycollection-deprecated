@@ -34,7 +34,6 @@
     ]
   ],
   "rewards": {
-    "function": "rubycollection:gnome",
     "experience": 3500
   }
 }

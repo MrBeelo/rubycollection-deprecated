@@ -86,6 +86,17 @@ public class ModCustomTrades {
                 );
             });
 
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.RUBERT, 3, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new TradedItem(Items.ANCIENT_DEBRIS, 1),
+                    new ItemStack(ModItems.RUBY, 4),
+                    9999,
+                    6,
+                    0.05f
+            ));
+
             factories.add((entity, random) -> {
                 Item[] foodItems = {
                         Items.COOKED_BEEF,
@@ -108,28 +119,6 @@ public class ModCustomTrades {
                         0.05f
                 );
             });
-
-
-        });
-
-        TradeOfferHelper.registerVillagerOffers(ModVillagers.RUBERT, 3, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(ModItems.RUBY_CLUSTER, 3),
-                    new ItemStack(  ModItems.KOKAINA_SEED, 1), //KOKAINA SEED
-                    9999,
-                    10,
-                    0.05f
-            ));
-
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(ModItems.RUBY, 3),
-                    new ItemStack(ModItems.KOKAINA, 2), //KOKAINA
-                    9999,
-                    10,
-                    0.05f
-            ));
-
-
 
         });
 

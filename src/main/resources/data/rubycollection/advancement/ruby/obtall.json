@@ -21,12 +21,6 @@
         },
         "items": [
           {
-            "items": "rubycollection:kokaina_seed"
-          },
-          {
-            "items": "rubycollection:kokaina"
-          },
-          {
             "items": "rubycollection:ruby_knocker"
           },
           {
@@ -93,7 +87,6 @@
     ]
   ],
   "rewards": {
-    "function": "rubycollection:gnome",
     "experience": 7000
   }
 }
