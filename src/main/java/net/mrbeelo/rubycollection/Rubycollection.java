@@ -30,3 +30,5 @@ public class Rubycollection implements ModInitializer {
 		return Identifier.of(MOD_ID, path);
 	}
 }
+
+//UPDATE CHECK 1
