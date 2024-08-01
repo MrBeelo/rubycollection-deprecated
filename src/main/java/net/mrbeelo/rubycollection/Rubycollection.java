@@ -25,7 +25,6 @@ public class Rubycollection implements ModInitializer {
 		ModVillagers.load();
 		ModCustomTrades.load();
 	}
-
 	public static Identifier id(String path) {
 		return Identifier.of(MOD_ID, path);
 	}

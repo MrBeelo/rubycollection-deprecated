@@ -67,7 +67,6 @@ public class ModTranslationProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.NETHER_RUBY_ORE, "Nether Ruby Ore");
         translationBuilder.add(ModBlocks.END_RUBY_ORE, "End Ruby Ore");
         translationBuilder.add(ModEffects.HIGH.value(), "High");
-        translationBuilder.add(ModEffects.HIGH_INITIALIZER.value(), "High Sound");
         addSoundEvent(translationBuilder, ModSounds.RUBY_BLOCK_BREAK, "Ruby Block Broken");
         addSoundEvent(translationBuilder, ModSounds.RUBY_BLOCK_FALL, "Ruby Block Fallen");
         addSoundEvent(translationBuilder, ModSounds.RUBY_BLOCK_HIT, "Ruby Block Hit");
