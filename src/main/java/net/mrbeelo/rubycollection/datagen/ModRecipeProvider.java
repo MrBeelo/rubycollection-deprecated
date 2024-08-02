@@ -2,17 +2,23 @@ package net.mrbeelo.rubycollection.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
+import net.minecraft.potion.Potions;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryWrapper;
 import net.mrbeelo.rubycollection.Rubycollection;
 import net.mrbeelo.rubycollection.modaddons.ModBlocks;
 import net.mrbeelo.rubycollection.modaddons.ModItems;
 
 import java.util.concurrent.CompletableFuture;
+
+import static net.mrbeelo.rubycollection.modaddons.ModPotions.KOKAINA_POTION;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
@@ -147,7 +153,48 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("E E")
                 .criterion(hasItem(ModItems.RUBY_INGOT), conditionsFromItem(ModItems.RUBY_INGOT))
                 .offerTo(exporter, Rubycollection.id("ruby_boots"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PISTOL, 1)
+                .input('E', Items.IRON_INGOT)
+                .pattern("EEE")
+                .pattern("E  ")
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, Rubycollection.id("pistol"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BULLET, 5)
+                .input(Items.IRON_NUGGET)
+                .input(Items.GUNPOWDER)
+                .criterion(hasItem(Items.GUNPOWDER), conditionsFromItem(Items.GUNPOWDER))
+                .offerTo(exporter, Rubycollection.id("bullet"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.PACKED_IRON_BLOCK, 1)
+                .input('E', Blocks.IRON_BLOCK)
+                .pattern("EEE")
+                .pattern("EEE")
+                .pattern("EEE")
+                .criterion(hasItem(Blocks.IRON_BLOCK), conditionsFromItem(Blocks.IRON_BLOCK))
+                .offerTo(exporter, Rubycollection.id("packed_iron_block_from_iron_blocks"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Blocks.IRON_BLOCK, 9)
+                .input(ModBlocks.PACKED_IRON_BLOCK)
+                .criterion(hasItem(ModBlocks.PACKED_IRON_BLOCK), conditionsFromItem(ModBlocks.PACKED_IRON_BLOCK))
+                .offerTo(exporter, Rubycollection.id("iron_blocks_from_packed_iron_block"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DEATH_AXE, 1)
+                .input('E', ModBlocks.PACKED_IRON_BLOCK)
+                .input('S', Items.STICK)
+                .pattern("ESE")
+                .pattern(" S ")
+                .pattern(" S ")
+                .criterion(hasItem(ModBlocks.PACKED_IRON_BLOCK), conditionsFromItem(ModBlocks.PACKED_IRON_BLOCK))
+                .offerTo(exporter, Rubycollection.id("death_axe"));
+
+        FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
+            builder.registerPotionRecipe(
+                    Potions.WATER,
+                    ModItems.KOKAINA,
+                    Registries.POTION.getEntry(KOKAINA_POTION)
+            );
+        });
     }
-
-
 }

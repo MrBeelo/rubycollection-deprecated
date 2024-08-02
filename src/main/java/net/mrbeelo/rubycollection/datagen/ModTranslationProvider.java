@@ -2,17 +2,19 @@ package net.mrbeelo.rubycollection.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
+import net.minecraft.item.PotionItem;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.Potions;
+import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableTextContent;
+import net.minecraft.util.Identifier;
 import net.minecraft.village.VillagerProfession;
 import net.mrbeelo.rubycollection.Rubycollection;
-import net.mrbeelo.rubycollection.modaddons.ModBlocks;
-import net.mrbeelo.rubycollection.modaddons.ModEffects;
-import net.mrbeelo.rubycollection.modaddons.ModItemGroups;
-import net.mrbeelo.rubycollection.modaddons.ModItems;
-import net.mrbeelo.rubycollection.modaddons.ModSounds;
-import net.mrbeelo.rubycollection.modaddons.ModVillagers;
+import net.mrbeelo.rubycollection.modaddons.*;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
@@ -42,6 +44,30 @@ public class ModTranslationProvider extends FabricLanguageProvider {
         builder.add(key, value);
     }
 
+    private static void addPotionTranslations(@NotNull TranslationBuilder builder, Potion potion, @NotNull String value) {
+        Identifier potionId = Registries.POTION.getId(potion);
+        if (potionId != null) {
+            String key = "item.minecraft.potion.effect." + potionId.getPath();
+            builder.add(key, "Potion of " + value); // Customize translation value
+        }
+
+        if (potionId != null) {
+            String key = "item.minecraft.splash_potion.effect." + potionId.getPath();
+            builder.add(key, "Splash Potion of " + value); // Customize translation value
+        }
+
+        if (potionId != null) {
+            String key = "item.minecraft.lingering_potion.effect." + potionId.getPath();
+            builder.add(key, "Lingering Potion of " + value); // Customize translation value
+        }
+
+        Item tippedArrow = Items.TIPPED_ARROW;
+        if (potionId != null) {
+            String key = "item.minecraft.tipped_arrow.effect." + potionId.getPath();
+            builder.add(key, "Tipped Arrow with " + value); // Customize translation value
+        }
+    }
+
     @Override
     public void generateTranslations(RegistryWrapper.WrapperLookup registryLookup, TranslationBuilder translationBuilder) {
         translationBuilder.add(ModItems.RUBY, "Ruby");
@@ -68,14 +94,20 @@ public class ModTranslationProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.END_RUBY_ORE, "End Ruby Ore");
         translationBuilder.add(ModEffects.HIGH.value(), "High");
         translationBuilder.add(ModItems.PURIFY, "Purify Soul Card");
+        translationBuilder.add(ModItems.PISTOL, "Tactical Pistol");
+        translationBuilder.add(ModItems.BULLET, "Bullet");
+        translationBuilder.add(ModBlocks.PACKED_IRON_BLOCK, "Packed Iron Block");
+        translationBuilder.add(ModItems.DEATH_AXE, "Death Axe");
         addSoundEvent(translationBuilder, ModSounds.RUBY_BLOCK_BREAK, "Ruby Block Broken");
         addSoundEvent(translationBuilder, ModSounds.RUBY_BLOCK_FALL, "Ruby Block Fallen");
         addSoundEvent(translationBuilder, ModSounds.RUBY_BLOCK_HIT, "Ruby Block Hit");
         addSoundEvent(translationBuilder, ModSounds.RUBY_BLOCK_STEP, "Ruby Block Stepped On");
         addSoundEvent(translationBuilder, ModSounds.RUBY_BLOCK_PLACE, "Ruby Block Placed");
         addSoundEvent(translationBuilder, ModSounds.HIGH, "High Person Running");
+        addSoundEvent(translationBuilder, ModSounds.PEW, "Gunshot");
         addText(translationBuilder, ModItemGroups.RUBY_TITLE, "The Ruby Collection");
         addVillager(translationBuilder, ModVillagers.RUBERT, "Rubert");
+        addPotionTranslations(translationBuilder, ModPotions.KOKAINA_POTION, "Kokaina");
     }
 }
 

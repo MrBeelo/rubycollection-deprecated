@@ -5,6 +5,8 @@
   "ruby_block_place": {"subtitle": "sounds.rubycollection.ruby_block_place", "sounds": ["rubycollection:ruby_block_place"]},
   "ruby_block_step": {"subtitle": "sounds.rubycollection.ruby_block_step", "sounds": ["rubycollection:ruby_block_step"]},
   "high": {"subtitle": "sounds.rubycollection.high", "sounds": ["rubycollection:high"]},
+  "pew": {"subtitle": "sounds.rubycollection.pew", "sounds": ["rubycollection:pew"]},
+  "magempty": {"subtitle": "sounds.rubycollection.magempty", "sounds": ["rubycollection:magempty"]},
   "gnome": {"category": "master", "sounds": ["rubycollection:custom/gnome"]},
   "correct": {"category": "master", "sounds": ["rubycollection:custom/correct"]},
   "incorrect": {"category": "master", "sounds": ["rubycollection:custom/incorrect"]}

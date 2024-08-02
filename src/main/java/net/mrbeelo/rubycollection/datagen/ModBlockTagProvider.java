@@ -35,7 +35,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .addTag(ModTags.Blocks.RUBY_BLOCKS);
 
         getOrCreateTagBuilder(BlockTags.BEACON_BASE_BLOCKS)
-                .add(ModBlocks.RUBY_BLOCK);
+                .add(ModBlocks.RUBY_BLOCK)
+                .add(ModBlocks.PACKED_IRON_BLOCK);
 
 
 

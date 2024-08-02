@@ -23,6 +23,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_RUBY_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_RUBY_ORE);
         blockStateModelGenerator.registerCrop(ModBlocks.KOKAINA_CROP, KokainaCropBlock.AGE, 0, 1, 2, 3);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PACKED_IRON_BLOCK);
     }
 
     @Override
@@ -44,5 +45,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.RUBY_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.RUBY_BOOTS));
         itemModelGenerator.register(ModItems.PURIFY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PISTOL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BULLET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DEATH_AXE, Models.HANDHELD);
     }
 }

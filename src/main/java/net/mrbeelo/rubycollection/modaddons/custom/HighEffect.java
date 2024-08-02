@@ -20,7 +20,7 @@ public class HighEffect extends StatusEffect {
         super.onApplied(entity, amplifier);
         if (entity instanceof PlayerEntity) {
             PlayerEntity player = (PlayerEntity) entity;
-            player.getWorld().playSound(null, player.getX(), player.getY(), player.getZ(), ModSounds.HIGH, player.getSoundCategory(), 1000.0F, 1.0F);
+            player.getWorld().playSound(null, player.getX(), player.getY(), player.getZ(), ModSounds.HIGH, player.getSoundCategory(), 50.0F, 1.0F);
         }
     }
 

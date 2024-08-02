@@ -4,10 +4,15 @@ import net.minecraft.component.type.AttributeModifierSlot;
 import net.minecraft.component.type.AttributeModifiersComponent;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.*;
+import net.minecraft.potion.Potion;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.mrbeelo.rubycollection.Rubycollection;
+import net.mrbeelo.rubycollection.modaddons.custom.DeathAxe;
+import net.mrbeelo.rubycollection.modaddons.custom.Pistol;
 import net.mrbeelo.rubycollection.modaddons.custom.Purify;
 
 public class ModItems {
@@ -30,8 +35,12 @@ public class ModItems {
     public static final ArmorItem RUBY_CHESTPLATE = register("ruby_chestplate", new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(45))));
     public static final ArmorItem RUBY_LEGGINGS = register("ruby_leggings", new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(45))));
     public static final ArmorItem RUBY_BOOTS = register("ruby_boots", new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(45))));
-    public static final SwordItem RUBY_KNOCKER = register("ruby_knocker", new SwordItem(ModToolMaterials.RUBY, new Item.Settings().maxDamage(100).attributeModifiers(AttributeModifiersComponent.builder().add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK, new EntityAttributeModifier(Rubycollection.id("effect.knockback"), 15.0, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.MAINHAND).build())));
+    public static final SwordItem RUBY_KNOCKER = register("ruby_knocker", new SwordItem(ModToolMaterials.RUBY, new Item.Settings().attributeModifiers(AttributeModifiersComponent.builder().add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK, new EntityAttributeModifier(Rubycollection.id("effect.knockback"), 15.0, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.MAINHAND).build())));
     public static final Item PURIFY = register("purify", new Purify(new Item.Settings().maxCount(3)));
+    public static final Item PISTOL = register("pistol", new Pistol(new Item.Settings().maxCount(1)));
+    public static final Item BULLET = register("bullet", new Item(new Item.Settings()));
+    public static final DeathAxe DEATH_AXE = register("death_axe", new DeathAxe(new Item.Settings().attributeModifiers(DeathAxe.createAttributeModifiers(ToolMaterials.IRON, 297, -3.5f))));
+
 
     //METHODS
 

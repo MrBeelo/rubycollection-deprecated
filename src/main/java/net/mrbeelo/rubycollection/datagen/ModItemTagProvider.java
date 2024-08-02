@@ -53,11 +53,16 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.RUBY_INGOT)
                 .add(ModItems.RUBY_CLUSTER);
 
+        getOrCreateTagBuilder(ModTags.Items.PEW_FAMILY)
+                .add(ModItems.PISTOL)
+                .add(ModItems.BULLET);
+
         getOrCreateTagBuilder(ModTags.Items.RUBY_ITEMS)
                 .addTag(ModTags.Items.RUBY_TOOLS)
                 .addTag(ModTags.Items.RUBY_ARMOR)
                 .addTag(ModTags.Items.RUBY_VARIANTS)
-                .addTag(ModTags.Items.KOKAINA_FAMILY);
+                .addTag(ModTags.Items.KOKAINA_FAMILY)
+                .addTag(ModTags.Items.PEW_FAMILY);
 
         getOrCreateTagBuilder(ItemTags.BEACON_PAYMENT_ITEMS)
                 .addTag(ModTags.Items.RUBY_VARIANTS);

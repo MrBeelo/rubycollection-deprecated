@@ -3,6 +3,7 @@
     "#rubycollection:ruby_tools",
     "#rubycollection:ruby_armor",
     "#rubycollection:ruby_variants",
-    "#rubycollection:kokaina_family"
+    "#rubycollection:kokaina_family",
+    "#rubycollection:pew_family"
   ]
 }

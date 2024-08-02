@@ -24,10 +24,11 @@ public class Rubycollection implements ModInitializer {
 		ModSounds.load();
 		ModVillagers.load();
 		ModCustomTrades.load();
+		ModPotions.load();
 	}
 	public static Identifier id(String path) {
 		return Identifier.of(MOD_ID, path);
 	}
 }
 
-//UPDATE CHECK 3
+//UPDATE CHECK 4
